@@ -11,7 +11,7 @@ const config = {
   title: "Wonj",
   tagline:
     "Blockchain Engineer focused on personal growth and staying abreast of emerging trends in decentralized technologies.",
-  url: "https://wonj1012.github.io",
+  url: "https://wonj.me",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
