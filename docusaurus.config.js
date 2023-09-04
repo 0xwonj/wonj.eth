@@ -111,7 +111,16 @@ const config = {
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/projects", label: "Projects", position: "left" },
           { to: "/talks", label: "Talks", position: "left" },
-          { to: "/docs/intro", label: "Docs", position: "left" },
+          {
+            label: "Docs",
+            position: "left",
+            items: [
+              {
+                label: "Research",
+                to: "/docs/category/research",
+              },
+            ],
+          },
         ],
       },
       footer: {
