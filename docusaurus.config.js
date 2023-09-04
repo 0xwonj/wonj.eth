@@ -143,7 +143,7 @@ const config = {
             items: [
               {
                 label: "Research",
-                to: "/docs/research",
+                to: "/docs/category/research",
               },
             ],
           },
