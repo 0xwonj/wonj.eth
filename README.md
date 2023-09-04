@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://raw.githubusercontent.com/pkosiec/website/main/static/img/logo.png" width="75">
+ <img src="static/img/logo.png" width="75">
 </p>
 
 # Wonjae Choi - Personal Website
