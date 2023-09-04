@@ -1,23 +1,16 @@
 @import "../../css/mixins";
 
 .socialContainer {
-  height: 20vh;
-  padding: 2.5rem 0 0rem;
+  height: 15vh;
+  padding: 1rem 0 0rem;
 }
 
 .socialLinks {
-  display: flex;
-  flex-wrap: wrap;
-
-  & > div {
-    flex: 1;
-  }
-
   @include small-size {
-    & > div:nth-child(odd) {
+    & > div:nth-child(5) {
       padding-right: calc(var(--ifm-spacing-horizontal) / 2);
     }
-    & > div:nth-child(even) {
+    & > div:nth-child(0) {
       padding-left: calc(var(--ifm-spacing-horizontal) / 2);
     }
   }
@@ -25,14 +18,14 @@
 
 .col {
   @include small-size {
-    --ifm-col-width: 50%;
+    --ifm-col-width: 16.6%;
     margin-top: var(--ifm-spacing-vertical);
   }
 }
 
 .btn {
   width: 100%;
-  border-color: var(--ifm-color-emphasis-200);
+  border-color: transparent;
   padding: 1rem 0;
 
   &--active,
@@ -42,8 +35,21 @@
     .btnText {
       color: var(--ifm-font-color-base-inverse);
     }
+    @include small-size {
+      .btnText {
+        color: transparent;
+      }
+    }
     .btnIcon {
       fill: var(--ifm-font-color-base-inverse);
+    }
+  }
+  @include small-size {
+    padding: 0 0 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    .btnText {
+      color: transparent;
     }
   }
 }
@@ -57,5 +63,5 @@
 }
 
 .btnText {
-  color: var(--ifm-font-color-base);
+  color: var(--ifm-button-color);
 }
