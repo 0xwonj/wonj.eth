@@ -1,0 +1,38 @@
+// Hero.module.scss
+
+@import "../../css/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+
+.heroBanner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background: #352f44;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-family: "Bungee Outline", cursive;
+  font-size: 7rem;
+  text-shadow: 3px 0px 30px rgba(0, 0, 0, 0.2);
+
+  @include small-size {
+    font-size: 3.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 2rem;
+  text-shadow: 2px 0px 20px rgba(0, 0, 0, 0.1);
+
+  @include small-size {
+    font-size: 1rem;
+  }
+}

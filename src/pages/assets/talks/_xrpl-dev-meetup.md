@@ -1,0 +1,1 @@
+XRP Ledger is a blockchain made by Ripple designed for payments. It is the third largest blockchain after the Bitcoin and Ethereum. This talk will cover the basics of the XRP Ledger, how it works, how to get started building on it, and how XRP Ledger is expanding their ecosystem with smart contracts and many new features.
