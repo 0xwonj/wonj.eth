@@ -34,4 +34,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-This site is deployed through github pages.
+This site is deployed through github pages. To deploy, simply push to the `main` branch.
