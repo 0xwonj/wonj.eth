@@ -6,6 +6,13 @@
 }
 
 .socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > div {
+    flex: 1;
+  }
+
   @include small-size {
     & > div:nth-child(odd) {
       padding-right: calc(var(--ifm-spacing-horizontal) / 2);
