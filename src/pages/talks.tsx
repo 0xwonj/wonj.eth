@@ -19,7 +19,8 @@ const talks: TalkMetadata[] = [
       },
     ],
     recordingURL: "https://www.youtube.com/watch?v=QkDLNzBN2EY",
-    slidesURL: "",
+    slidesURL:
+      "https://github.com/wonj1012/xrpl-session/blob/main/xrpl-dev-session_prettified.pdf",
   },
   {
     title: "Blockchain at Yonsei Regular Session",
