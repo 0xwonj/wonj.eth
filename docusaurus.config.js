@@ -118,6 +118,10 @@ const config = {
                 label: "Research",
                 to: "/docs/category/research",
               },
+              {
+                label: "Projects",
+                to: "/docs/category/projects",
+              },
             ],
           },
         ],
@@ -130,7 +134,7 @@ const config = {
             items: [
               {
                 label: "Email",
-                href: "mailto:jjaa1012@gmail.com",
+                href: "mailto:choi@wonj.me",
               },
               {
                 label: "GitHub",
