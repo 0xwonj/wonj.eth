@@ -1,0 +1,60 @@
+main {
+  --color-prettylights-syntax-comment: #b9b4c7;
+  --color-prettylights-syntax-constant: #5c5470;
+  --color-prettylights-syntax-entity: #352f44;
+  --color-prettylights-syntax-storage-modifier-import: #faf0e6;
+  --color-btn-text: #b9b4c7;
+  --color-btn-bg: #5c5470;
+  --color-btn-border: #faf0e6;
+  --color-btn-hover-bg: #352f44;
+  --color-fg-default: #b9b4c7;
+  --color-fg-muted: #5c5470;
+  --color-fg-subtle: #352f44;
+  --color-canvas-default: #faf0e6;
+  --color-canvas-overlay: #b9b4c7;
+  --color-canvas-inset: #5c5470;
+  --color-canvas-subtle: #352f44;
+  --color-border-default: #faf0e6;
+  --color-border-muted: #b9b4c7;
+  --color-accent-fg: #5c5470;
+  --color-accent-emphasis: #352f44;
+  --color-accent-muted: #faf0e6;
+  --color-success-fg: #352f44;
+  --color-attention-fg: #5c5470;
+  --color-danger-fg: #b9b4c7;
+  --color-social-reaction-bg-hover: #faf0e6;
+  --color-social-reaction-bg-reacted-hover: #352f44;
+}
+
+.gsc-reactions-count {
+  display: none;
+}
+
+.gsc-timeline {
+  flex-direction: column-reverse;
+}
+
+.gsc-header {
+  padding-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-header {
+  order: 1;
+}
+
+.gsc-comments > .gsc-comment-box {
+  margin-bottom: 1rem;
+  order: 2;
+}
+
+.gsc-comments > .gsc-timeline {
+  order: 3;
+}
+
+.gsc-homepage-bg {
+  background-color: #352f44;
+}
+
+main .gsc-loading-image {
+  background-image: url(https://github.githubassets.com/images/mona-loading-dimmed.gif);
+}

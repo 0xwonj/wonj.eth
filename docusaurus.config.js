@@ -63,7 +63,6 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/wonj1012/wonj1012.github.io/tree/main/",
           feedOptions: {
             type: "all",
             copyright: `Copyright © ${new Date().getFullYear()} Wonjae Choi.`,
