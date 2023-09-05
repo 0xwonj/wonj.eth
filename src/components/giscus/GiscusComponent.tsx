@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import Giscus from "@giscus/react";
 import { useColorMode } from "@docusaurus/theme-common";
 
-export default function GiscusComponent() {
+export const GiscusComponent: FunctionComponent = () => {
   const { colorMode } = useColorMode();
 
   return (
@@ -17,10 +17,10 @@ export default function GiscusComponent() {
       strict="0"
       reactionsEnabled="1"
       emitMetadata="0"
-      inputPosition="top"
+      inputPosition="bottom"
       theme={colorMode}
       lang="en"
       loading="lazy"
     />
   );
-}
+};
