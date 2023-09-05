@@ -7,9 +7,10 @@ export default function GiscusComponent() {
 
   return (
     <Giscus
+      id="comments"
       repo="wonj1012/wonj1012.github.io"
       repoId="R_kgDOKPQ1qg"
-      category="Announcement"
+      category="Announcements"
       categoryId="DIC_kwDOKPQ1qs4CZFmv"
       mapping="pathname"
       term="Please leave your comment or question here."
