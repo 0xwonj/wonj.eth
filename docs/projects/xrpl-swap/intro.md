@@ -1,5 +1,4 @@
 ---
-id: my_doc
 title: "Introduction"
 sidebar_label: "Intro"
 sidebar_position: 1
@@ -9,3 +8,5 @@ keywords:
   - "Defi"
   - "Project"
 ---
+
+Hello
