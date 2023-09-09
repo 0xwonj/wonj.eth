@@ -4,6 +4,19 @@ import { TypeAnimation } from "react-type-animation";
 
 import styles from "./Hero.module.scss";
 
+interface NoticeProps {
+  text: string;
+  link: string;
+}
+
+const Notice: FunctionComponent<NoticeProps> = ({ text, link }) => (
+  <div className={clsx(styles.notice)}>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      {text}
+    </a>
+  </div>
+);
+
 export const Hero: FunctionComponent = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [subtitleText, setSubtitleText] = useState("👻");
@@ -14,10 +27,9 @@ export const Hero: FunctionComponent = () => {
   };
 
   return (
-    <header
-      className={clsx(styles.heroBanner)}
-      style={{ position: "relative" }}
-    >
+    <header className={clsx(styles.heroBanner)}>
+      <Notice text="📢 Important Announcement!" link="/announcement" />
+
       <div className={clsx(styles.playStopButton)} onClick={toggleAnimation}>
         {showAnimation ? "⏸" : "▶️"}
       </div>
