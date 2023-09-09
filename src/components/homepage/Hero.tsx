@@ -3,19 +3,7 @@ import React, { FunctionComponent, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 import styles from "./Hero.module.scss";
-
-interface NoticeProps {
-  text: string;
-  link: string;
-}
-
-const Notice: FunctionComponent<NoticeProps> = ({ text, link }) => (
-  <div className={clsx(styles.notice)}>
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      {text}
-    </a>
-  </div>
-);
+import { Notice } from "./Notice";
 
 export const Hero: FunctionComponent = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -28,7 +16,10 @@ export const Hero: FunctionComponent = () => {
 
   return (
     <header className={clsx(styles.heroBanner)}>
-      <Notice text="📢 Important Announcement!" link="/announcement" />
+      <Notice
+        text="🎉 Ripple Hackathon First Prize"
+        link="/blog/ripple-hackathon/"
+      />
 
       <div className={clsx(styles.playStopButton)} onClick={toggleAnimation}>
         {showAnimation ? "⏸" : "▶️"}
