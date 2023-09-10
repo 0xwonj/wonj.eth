@@ -59,7 +59,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/wonj1012/wonj1012.github.io/tree/main/",
         },
         blog: {
           showReadingTime: true,
