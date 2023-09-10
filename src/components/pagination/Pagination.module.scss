@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: var(--ifm-background-color);
+  border-radius: var(--ifm-global-radius);
+}
+
+.button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: var(--ifm-font-size-base);
+  font-family: var(--ifm-font-family-base);
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  transition: background-color 0.2s;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #5c5470;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--ifm-color-primary-light);
+  }
+}
+
+.pageInfo {
+  font-size: var(--ifm-font-size-base);
+  font-family: var(--ifm-font-family-base);
+  color: var(--ifm-color-primary-dark);
+}
