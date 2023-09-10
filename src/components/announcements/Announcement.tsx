@@ -11,8 +11,18 @@ export const Announcement: FunctionComponent<AnnouncementProps> = ({
   date,
   link,
 }) => {
+  const handleOnClick = () => {
+    if (link) {
+      window.location.href = link;
+    }
+  };
+
   return (
-    <div className={clsx(styles.announcementRow)}>
+    <div
+      className={clsx(styles.announcementRow)}
+      onClick={handleOnClick}
+      style={{ cursor: link ? "pointer" : "default" }}
+    >
       <span className={clsx(styles.announcementText)}>
         {link ? <a href={link}>{text}</a> : text}
       </span>
