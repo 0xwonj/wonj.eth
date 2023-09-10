@@ -97,7 +97,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        hideOnScroll: false,
+        hideOnScroll: true,
         title: "Wonj",
         logo: {
           alt: "Wonjae Choi Logo",
