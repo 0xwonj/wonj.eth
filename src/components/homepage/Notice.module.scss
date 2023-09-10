@@ -25,6 +25,11 @@
 
 [data-theme="dark"] .notice {
   a {
-    color: var(--ifm-color-primary-lightest);
+    color: var(--ifm-color-primary-lighter);
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--ifm-color-primary-lightest);
+    }
   }
 }
