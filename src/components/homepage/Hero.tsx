@@ -16,10 +16,7 @@ export const Hero: FunctionComponent = () => {
 
   return (
     <header className={clsx(styles.heroBanner)}>
-      <Notice
-        text="🎉 Ripple Hackathon First Prize"
-        link="/blog/ripple-hackathon/"
-      />
+      <Notice />
 
       <div className={clsx(styles.playStopButton)} onClick={toggleAnimation}>
         {showAnimation ? "⏸" : "▶️"}
