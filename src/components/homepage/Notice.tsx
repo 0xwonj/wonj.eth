@@ -22,9 +22,7 @@ export const Notice: FunctionComponent = () => {
 
   return (
     <div className={clsx(styles.notice)}>
-      <a href={latestAnnouncement.link || "/announcements"}>
-        {latestAnnouncement.text}
-      </a>
+      <a href="/announcements">{latestAnnouncement.text}</a>
     </div>
   );
 };
