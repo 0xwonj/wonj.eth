@@ -3,11 +3,25 @@ import Layout from "@theme/Layout";
 
 import Talk, { TalkMetadata } from "../components/talks/Talk";
 
+import XrplSwapPitching from "./assets/talks/_xrpl-swap-pitching.md";
 import XrplDevMeetup from "./assets/talks/_xrpl-dev-meetup.md";
 import BlockchainAtYonsei from "./assets/talks/_blockchain-at-yonsei.md";
 import HyperledgerFabricDataNFT from "./assets/talks/_hyperledger-fabric-project.md";
 
 const talks: TalkMetadata[] = [
+  {
+    title: "XRPL Swap Pitching",
+    description: <XrplSwapPitching />,
+    events: [
+      {
+        name: "KBW XRPL Event",
+        location: "JBK Convention Hall, Seoul, Korea",
+        date: new Date(2023, 9, 6),
+      },
+    ],
+    slidesURL:
+      "https://www.canva.com/design/DAFtK7o1aKE/XFveUGKdKXmKPlcBscfrFQ/edit?utm_content=DAFtK7o1aKE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+  },
   {
     title: "XRP Ledger Developer Meetup Session",
     description: <XrplDevMeetup />,
