@@ -56,7 +56,7 @@ const config = {
       {
         id: "private-blog",
         routeBasePath: "blog/private",
-        path: "./blog/private",
+        path: "./private-blog",
       },
     ],
   ],
