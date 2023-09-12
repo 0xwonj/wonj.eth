@@ -200,8 +200,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: "W9K280J31J",
-        apiKey: "cc4d3a5a64e58eb9651c37ece7c2fcc0",
+        appId: "CB335PXNDZ",
+        apiKey: "1fbb5b8b42a34c502bec7ca518d55a89",
         indexName: "wonj",
       },
     }),
