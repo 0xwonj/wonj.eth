@@ -51,6 +51,14 @@ const config = {
         disableInDev: false,
       },
     ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "private-blog",
+        routeBasePath: "blog/private",
+        path: "./blog/private",
+      },
+    ],
   ],
   presets: [
     [
@@ -61,6 +69,9 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
+          blogTitle: "Wonj's Blog",
+          blogDescription: "Personal blog by Wonjae Choi.",
+          postsPerPage: 10,
           showReadingTime: true,
           feedOptions: {
             type: "all",
