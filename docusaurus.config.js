@@ -184,6 +184,10 @@ const config = {
                 label: "Talks",
                 to: "/talks",
               },
+              {
+                label: "Résumé",
+                to: "/resume.pdf",
+              },
             ],
           },
           {
