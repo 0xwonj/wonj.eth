@@ -167,6 +167,10 @@ const config = {
                 label: "Research",
                 to: "/docs/category/research",
               },
+              {
+                label: "Projects",
+                to: "/docs/category/projects",
+              },
             ],
           },
           {
@@ -186,7 +190,7 @@ const config = {
               },
               {
                 label: "Résumé",
-                to: "/resume.pdf",
+                href: "https://wonj.me/resume.pdf",
               },
             ],
           },
