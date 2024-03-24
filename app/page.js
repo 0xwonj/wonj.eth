@@ -223,7 +223,7 @@ const HomePage = () => {
               href={link.link}
               target={link.target}
               key={linkIndex}
-              className="bg-blue-950 text-blue-100 rounded-lg btnBorder relative grid place-items-center p-3"
+              className="bg-blue-950 text-blue-100 rounded-lg btnBorder relative grid place-items-center p-3 hover:text-cyan-300"
             >
               <i className={' text-3xl  ' + link.icon}></i>
             </Link>

@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
   const footer = (
     <footer className="py-20 flex items-center justify-center px-4">
       <Link href={'/'}>
-        <p>
+        <p className="specialShadow">
           <i className="fa-regular fa-copyright pr-1"></i> wonj.eth 2024 👾
         </p>
       </Link>
