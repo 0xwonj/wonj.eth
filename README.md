@@ -1,7 +1,3 @@
-<p align="center">
- <img src="static/img/logo.png" width="75">
-</p>
-
 # Wonjae Choi - Personal Website
 
 This repository contains source code of the my website. To view the website, visit [wonj.me](https://wonj.me).
