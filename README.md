@@ -4,11 +4,7 @@
 
 # Wonjae Choi - Personal Website
 
-This repository contains source code of the Wonjae Choi's personal website. To see it live, navigate to the [wonj.me](https://wonj.me) address.
-
-## Development
-
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This repository contains source code of the my website. To view the website, visit [wonj.me](https://wonj.me).
 
 ### Installation
 
@@ -19,10 +15,8 @@ $ npm install
 ### Local Development
 
 ```
-$ npm start
+$ npm dev run
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
