@@ -1,38 +1,38 @@
-import fs from "fs";
-import Markdown from "markdown-to-jsx";
-import matter from "gray-matter";
-import getPostMetadata from "../../../components/getPostMetadata";
-import MainWrapper from "@/components/MainWrapper";
-import Link from "next/link";
+import fs from 'fs';
+import Markdown from 'markdown-to-jsx';
+import matter from 'gray-matter';
+import getPostMetadata from '../../../components/getPostMetadata';
+import MainWrapper from '@/components/MainWrapper';
+import Link from 'next/link';
 
-import { Inter, Press_Start_2P, Space_Mono } from "next/font/google";
-const press = Press_Start_2P({ subsets: ["latin"], weight: ["400"] });
+import { Inter, Press_Start_2P, Space_Mono } from 'next/font/google';
+const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
-const getPostContent = (slug) => {
-  const folder = "posts/";
+const getPostContent = slug => {
+  const folder = 'posts/';
   const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
+  const content = fs.readFileSync(file, 'utf8');
   const matterResult = matter(content);
   return matterResult;
 };
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetadata("posts");
-  return posts.map((post) => ({
+  const posts = getPostMetadata('posts');
+  return posts.map(post => ({
     slug: post.slug,
   }));
 };
 
 export async function generateMetadata({ params, searchParams }, parent) {
   // read route params
-  const id = params?.slug ? " ⋅ " + params?.slug : "";
+  const id = params?.slug ? ' ⋅ ' + params?.slug : '';
 
   return {
-    title: `Wonj ⋅ Blog${id.replaceAll("_", " ")}`,
+    title: `Wonj ⋅ Blog${id.replaceAll('_', ' ')}`,
   };
 }
 
-const PostPage = (props) => {
+const PostPage = props => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
 
@@ -86,13 +86,13 @@ const PostPage = (props) => {
     <MainWrapper>
       <div className="flex flex-col">
         <Link
-          href={"/blog"}
+          href={'/blog'}
           className="relative mr-auto overflow-hidden group hover:after:translate-x-full after:duration-200 after:absolute after:top-0 after:h-full after:w-full after:right-full after:bg-pink-500 after:z-[-1]"
         >
           <p className="group-hover:text-[#030615] duration-200">&larr; Back</p>
         </Link>
         <div className="my-12 ">
-          <h1 className={"text-2xl text-pink-100 " + press.className}>
+          <h1 className={'text-2xl text-pink-100 ' + press.className}>
             {post.data.title}
           </h1>
           <p className="mt-2 text-pink-50">{post.data.date}</p>

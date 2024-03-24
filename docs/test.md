@@ -1,8 +1,8 @@
 ---
-title: "Test - Etc"
-subtitle: "This is a test post for etc category."
-date: "2024-03-25"
-category: "something"
+title: 'Test - Etc'
+subtitle: 'This is a test post for etc category.'
+date: '2024-03-25'
+category: 'something'
 ---
 
 ## Test Post

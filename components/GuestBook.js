@@ -1,13 +1,13 @@
-import Link from "next/link";
-import React, { useState } from "react";
-import BlueBtn from "./BlueBtn";
-import { Press_Start_2P } from "next/font/google";
+import Link from 'next/link';
+import React, { useState } from 'react';
+import BlueBtn from './BlueBtn';
+import { Press_Start_2P } from 'next/font/google';
 
-const press = Press_Start_2P({ subsets: ["latin"], weight: ["400"] });
+const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
 export default function GuestBook() {
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
   const [isPublic, setIsPublic] = useState(true);
   const [submission, setSubmission] = useState(null);
 
@@ -15,27 +15,27 @@ export default function GuestBook() {
     if (submission || !message) {
       return;
     }
-    setSubmission("sending");
+    setSubmission('sending');
     try {
-      const url = "/api/feedback";
+      const url = '/api/feedback';
       const options = {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ message, name, isPublic }),
       };
       const res = await fetch(url, options);
       if (res.ok) {
-        setSubmission("sent");
-        setName("");
-        setMessage("");
+        setSubmission('sent');
+        setName('');
+        setMessage('');
         setIsPublic(true);
       } else {
         setSubmission(null);
       }
     } catch (err) {
-      console.error("Failed to submit message", err.message);
+      console.error('Failed to submit message', err.message);
       setSubmission(null);
     }
   }
@@ -59,14 +59,14 @@ export default function GuestBook() {
         <div className="grid grid-cols-1 gap-4">
           <input
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={e => setName(e.target.value)}
             placeholder="Name"
             className="resize-none bg-transparent border border-solid border-blue-900 p-2 rounded-xl focus:border-blue-700 duration-200 outline-none"
           />
         </div>
         <textarea
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={e => setMessage(e.target.value)}
           placeholder="Your message here..."
           className="resize-none bg-transparent border border-solid border-blue-900 p-2 rounded-xl focus:border-blue-700 duration-200 outline-none min-h-[140px]"
         ></textarea>
@@ -75,7 +75,7 @@ export default function GuestBook() {
             type="checkbox"
             className="form-checkbox h-5 w-5 text-blue-600"
             checked={isPublic}
-            onChange={(e) => setIsPublic(e.target.checked)}
+            onChange={e => setIsPublic(e.target.checked)}
           />
           <span className="ml-2 text-gray-700">Public</span>
         </label>
@@ -85,10 +85,10 @@ export default function GuestBook() {
         <BlueBtn
           btnText={
             !submission
-              ? "Submit ⭐️"
-              : submission === "sending"
-              ? "Sending..."
-              : "Sent ✅"
+              ? 'Submit ⭐️'
+              : submission === 'sending'
+                ? 'Sending...'
+                : 'Sent ✅'
           }
           lg
           noShadow

@@ -1,19 +1,19 @@
-import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
-import Script from "next/script";
+import './globals.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import Script from 'next/script';
 
-import { Inter, Press_Start_2P, Roboto_Mono } from "next/font/google";
-import Head from "./head";
-const space = Roboto_Mono({ subsets: ["latin"], weight: ["400", "700"] });
+import { Inter, Press_Start_2P, Roboto_Mono } from 'next/font/google';
+import Head from './head';
+const space = Roboto_Mono({ subsets: ['latin'], weight: ['400', '700'] });
 // const inter = Inter({ subsets: ["latin"] });
-const press = Press_Start_2P({ subsets: ["latin"], weight: ["400"] });
+const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata = {
-  title: "Wonj",
-  description: "Blockchain Developer & Researcher at SNU VMO Lab and Decipher",
+  title: 'Wonj',
+  description: 'Blockchain Developer & Researcher at SNU VMO Lab and Decipher',
   icons: {
-    icon: "/favicon.png",
+    icon: '/favicon.png',
   },
 };
 
@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
       {/* <p className={"textGradient text-xs sm:text-sm text-center " }>Share your success story &rarr;</p> */}
       <header className="flex items-center gap-4 justify-between p-4 relative">
         {/* <div className="animatedBorder"><div></div></div> */}
-        <Link href={"/"}>
+        <Link href={'/'}>
           <h1
-            className={"specialShadow text-2xl sm:text-3xl " + press.className}
+            className={'specialShadow text-2xl sm:text-3xl ' + press.className}
           >
             &#62;&#62; wonj.eth
           </h1>
@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
 
   const footer = (
     <footer className="py-20 flex items-center justify-center px-4">
-      <Link href={"/"}>
+      <Link href={'/'}>
         <p>
           <i className="fa-regular fa-copyright pr-1"></i> wonj.eth 2024 👾
         </p>
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
       <Head />
       <body
         className={
-          "bg-[#030615] text-blue-100 flex flex-col gap-4 sm:gap-6 md:gap-10 min-h-screen p-4 text-sm sm:text-base " +
+          'bg-[#030615] text-blue-100 flex flex-col gap-4 sm:gap-6 md:gap-10 min-h-screen p-4 text-sm sm:text-base ' +
           space.className
         }
       >

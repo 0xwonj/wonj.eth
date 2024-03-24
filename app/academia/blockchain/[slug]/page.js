@@ -1,38 +1,38 @@
-import fs from "fs";
-import Markdown from "markdown-to-jsx";
-import matter from "gray-matter";
-import getPostMetadata from "@/components/getPostMetadata";
-import MainWrapper from "@/components/MainWrapper";
-import Link from "next/link";
+import fs from 'fs';
+import Markdown from 'markdown-to-jsx';
+import matter from 'gray-matter';
+import getPostMetadata from '@/components/getPostMetadata';
+import MainWrapper from '@/components/MainWrapper';
+import Link from 'next/link';
 
-import { Inter, Press_Start_2P, Space_Mono } from "next/font/google";
-const press = Press_Start_2P({ subsets: ["latin"], weight: ["400"] });
+import { Inter, Press_Start_2P, Space_Mono } from 'next/font/google';
+const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
-const getPostContent = (slug) => {
-  const folder = "docs/";
+const getPostContent = slug => {
+  const folder = 'docs/';
   const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
+  const content = fs.readFileSync(file, 'utf8');
   const matterResult = matter(content);
   return matterResult;
 };
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetadata("docs", "blockchain");
-  return posts.map((post) => ({
+  const posts = getPostMetadata('docs', 'blockchain');
+  return posts.map(post => ({
     slug: post.slug,
   }));
 };
 
 export async function generateMetadata({ params, searchParams }, parent) {
   // read route params
-  const id = params?.slug ? " ⋅ " + params?.slug : "";
+  const id = params?.slug ? ' ⋅ ' + params?.slug : '';
 
   return {
-    title: `Wonj ⋅ blockchain${id.replaceAll("_", " ")}`,
+    title: `Wonj ⋅ blockchain${id.replaceAll('_', ' ')}`,
   };
 }
 
-const PostPage = (props) => {
+const PostPage = props => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
 
@@ -86,13 +86,13 @@ const PostPage = (props) => {
     <MainWrapper>
       <div className="flex flex-col">
         <Link
-          href={"/academia/blockchain/"}
+          href={'/academia/blockchain/'}
           className="relative mr-auto overflow-hidden group hover:after:translate-x-full after:duration-200 after:absolute after:top-0 after:h-full after:w-full after:right-full after:bg-purple-500 after:z-[-1]"
         >
           <p className="group-hover:text-[#030615] duration-200">&larr; Back</p>
         </Link>
         <div className="my-12">
-          <h1 className={"text-2xl text-purple-100 " + press.className}>
+          <h1 className={'text-2xl text-purple-100 ' + press.className}>
             {post.data.title}
           </h1>
           <p className="mt-2 text-purple-50">{post.data.date}</p>

@@ -1,7 +1,7 @@
 ---
-title: "Test - Blog"
-subtitle: "This is a test post for blog"
-date: "2024-03-25"
+title: 'Test - Blog'
+subtitle: 'This is a test post for blog'
+date: '2024-03-25'
 ---
 
 ## Test Post

@@ -1,8 +1,8 @@
 ---
-title: "Test - Computer Science"
-subtitle: "This is a test post for computer-science category."
-date: "2024-03-25"
-category: "computer-science"
+title: 'Test - Computer Science'
+subtitle: 'This is a test post for computer-science category.'
+date: '2024-03-25'
+category: 'computer-science'
 ---
 
 ## Test Post

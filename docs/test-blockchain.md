@@ -1,8 +1,8 @@
 ---
-title: "Test - Blockchain"
-subtitle: "This is a test post for blockchain category."
-date: "2024-03-25"
-category: "blockchain"
+title: 'Test - Blockchain'
+subtitle: 'This is a test post for blockchain category.'
+date: '2024-03-25'
+category: 'blockchain'
 ---
 
 ## Test Post

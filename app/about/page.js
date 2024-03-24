@@ -1,126 +1,126 @@
-import MainWrapper from "@/components/MainWrapper";
-import React from "react";
+import MainWrapper from '@/components/MainWrapper';
+import React from 'react';
 
-import { Inter, Press_Start_2P, Roboto_Mono } from "next/font/google";
-const space = Roboto_Mono({ subsets: ["latin"], weight: ["400", "700"] });
+import { Inter, Press_Start_2P, Roboto_Mono } from 'next/font/google';
+const space = Roboto_Mono({ subsets: ['latin'], weight: ['400', '700'] });
 // const inter = Inter({ subsets: ["latin"] });
-const press = Press_Start_2P({ subsets: ["latin"], weight: ["400"] });
+const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata = {
-  title: "Wonj ⋅ About",
-  description: "Blockchain Developer & Researcher at SNU VMO Lab and Decipher",
+  title: 'Wonj ⋅ About',
+  description: 'Blockchain Developer & Researcher at SNU VMO Lab and Decipher',
 };
 
 export default function ExperiencePage() {
   let education = [
     {
-      institution: "Seoul National University",
-      location: "Korea",
-      degree: "MS/PH.D IN COMPUTER SCIENCE",
-      enrollment: "Sep. 2024 - Expected",
+      institution: 'Seoul National University',
+      location: 'Korea',
+      degree: 'MS/PH.D IN COMPUTER SCIENCE',
+      enrollment: 'Sep. 2024 - Expected',
       details: [
-        "Virtual Machine & Optimization Lab",
-        "Focus on blockchain core research and development.",
-        "Currently participating as an undergraduate research intern.",
+        'Virtual Machine & Optimization Lab',
+        'Focus on blockchain core research and development.',
+        'Currently participating as an undergraduate research intern.',
       ],
-      website: "https://altair.snu.ac.kr/",
+      website: 'https://altair.snu.ac.kr/',
     },
     {
-      institution: "Yonsei University",
-      location: "Korea",
-      degree: "B.S. CANDIDATE IN COMPUTER SCIENCE",
-      enrollment: "Mar. 2020 - Aug. 2024",
-      details: ["Scholarship Granted by WeMade (₩ 5,000,000)"],
+      institution: 'Yonsei University',
+      location: 'Korea',
+      degree: 'B.S. CANDIDATE IN COMPUTER SCIENCE',
+      enrollment: 'Mar. 2020 - Aug. 2024',
+      details: ['Scholarship Granted by WeMade (₩ 5,000,000)'],
     },
   ];
   let workingExperience = [
     {
-      position: "UNDERGRADUATE RESEARCH INTERN",
-      company: "Seoul National University VMO Lab",
-      location: "Korea",
-      duration: "Feb. 2024 - Present",
+      position: 'UNDERGRADUATE RESEARCH INTERN',
+      company: 'Seoul National University VMO Lab',
+      location: 'Korea',
+      duration: 'Feb. 2024 - Present',
       details: [
-        "Working as an intern researching blockchain core.",
-        "Will begin my Integrated Master’s and Ph.D studies in September 2024.",
+        'Working as an intern researching blockchain core.',
+        'Will begin my Integrated Master’s and Ph.D studies in September 2024.',
       ],
     },
     {
-      position: "DEVELOPER RELATIONS",
-      company: "XRPL Korea",
-      location: "Korea",
-      duration: "June. 2023 - Sep. 2023",
+      position: 'DEVELOPER RELATIONS',
+      company: 'XRPL Korea',
+      location: 'Korea',
+      duration: 'June. 2023 - Sep. 2023',
       details: [
-        "Made an technical documentation for Korean XRPL developers.",
-        "Held a one hour developer session about the core of XRPL at the meetup.",
-        "Provided technical support for the XRPL developers.",
+        'Made an technical documentation for Korean XRPL developers.',
+        'Held a one hour developer session about the core of XRPL at the meetup.',
+        'Provided technical support for the XRPL developers.',
       ],
-      twitter: "https://twitter.com/xrplkorea",
+      twitter: 'https://twitter.com/xrplkorea',
     },
     {
-      position: "BLOCKCHAIN DEVELOPER",
-      company: "Web3Mon",
-      location: "Remote",
-      duration: "Feb. 2023 - May. 2023",
+      position: 'BLOCKCHAIN DEVELOPER',
+      company: 'Web3Mon',
+      location: 'Remote',
+      duration: 'Feb. 2023 - May. 2023',
       details: [
-        "Made smart contracts using Rust for Solana.",
-        "Maintained and developed Rust backend server.",
-        "Conducted research on optimizing virtual state channel for crosschain implementation.",
+        'Made smart contracts using Rust for Solana.',
+        'Maintained and developed Rust backend server.',
+        'Conducted research on optimizing virtual state channel for crosschain implementation.',
       ],
-      website: "https://docs.web3mon.io/",
-      twitter: "https://twitter.com/web3mon",
+      website: 'https://docs.web3mon.io/',
+      twitter: 'https://twitter.com/web3mon',
     },
     {
-      position: "QUANTITATIVE DEVELOPER",
-      company: "Contract in Person",
-      location: "Remote",
-      duration: "Oct. 2021 - Jan. 2023",
+      position: 'QUANTITATIVE DEVELOPER',
+      company: 'Contract in Person',
+      location: 'Remote',
+      duration: 'Oct. 2021 - Jan. 2023',
       details: [
-        "Algorithmic Trading: Developed trading algorithms using technical analysis and AI.",
-        "DEX Arbitrage: Conducted research on various MEVs.",
-        "Developed a cross‑DEX, cyclic arbitrage bot using flash swap.",
-        "AUM $400k",
+        'Algorithmic Trading: Developed trading algorithms using technical analysis and AI.',
+        'DEX Arbitrage: Conducted research on various MEVs.',
+        'Developed a cross‑DEX, cyclic arbitrage bot using flash swap.',
+        'AUM $400k',
       ],
-      github: "https://github.com/wonj1012/trading",
+      github: 'https://github.com/wonj1012/trading',
     },
   ];
   let extracurricularActivities = [
     {
-      organization: "Decipher",
-      institution: "Seoul National University, Korea",
-      role: "BLOCKCHAIN RESEARCHER",
-      duration: "Sep. 2023 - Present",
+      organization: 'Decipher',
+      institution: 'Seoul National University, Korea',
+      role: 'BLOCKCHAIN RESEARCHER',
+      duration: 'Sep. 2023 - Present',
       details: [
-        "A member of Decipher, a blockchain research group at Seoul National University.",
-        "Technical research and sessions about various topics of blockchain.",
-        "Team Opensource Warriors: Contributed to ERC‑6900 github and Alchemy team.",
-        "ZK Research Team: Conducted various research on ZKP and rollup architectures.",
+        'A member of Decipher, a blockchain research group at Seoul National University.',
+        'Technical research and sessions about various topics of blockchain.',
+        'Team Opensource Warriors: Contributed to ERC‑6900 github and Alchemy team.',
+        'ZK Research Team: Conducted various research on ZKP and rollup architectures.',
       ],
-      website: "https://medium.com/decipher-media",
-      github: "https://github.com/decipherhub",
-      twitter: "https://twitter.com/DecipherGlobal",
+      website: 'https://medium.com/decipher-media',
+      github: 'https://github.com/decipherhub',
+      twitter: 'https://twitter.com/DecipherGlobal',
     },
     {
-      organization: "Blockchain at Yonsei",
-      institution: "Yonsei University, Korea",
-      role: "TECH LEAD & BOARD MEMBER",
-      duration: "Sep. 2022 - Aug. 2023",
+      organization: 'Blockchain at Yonsei',
+      institution: 'Yonsei University, Korea',
+      role: 'TECH LEAD & BOARD MEMBER',
+      duration: 'Sep. 2022 - Aug. 2023',
       details: [
-        "Completed two semester activity of Blockchain at Yonsei, a blockchain academic club based on Yonsei University.",
-        "Drove research initiatives on emerging topics in blockchain and web3 technologies.",
-        "Held 2 hours sessions about Solidity smart contracts for 6 weeks as a lecturer.",
+        'Completed two semester activity of Blockchain at Yonsei, a blockchain academic club based on Yonsei University.',
+        'Drove research initiatives on emerging topics in blockchain and web3 technologies.',
+        'Held 2 hours sessions about Solidity smart contracts for 6 weeks as a lecturer.',
       ],
-      website: "https://www.blockchainatyonsei.com/",
-      twitter: "https://twitter.com/BlockchainatYU",
+      website: 'https://www.blockchainatyonsei.com/',
+      twitter: 'https://twitter.com/BlockchainatYU',
     },
     {
-      organization: "Morgorithm (Algorithm Club at Yonsei University)",
-      institution: "Yonsei University, Korea",
-      role: "MEMBER",
-      duration: "Mar. 2020 - Mar. 2022",
+      organization: 'Morgorithm (Algorithm Club at Yonsei University)',
+      institution: 'Yonsei University, Korea',
+      role: 'MEMBER',
+      duration: 'Mar. 2020 - Mar. 2022',
       details: [
-        "Solved and learned algorithm problems in depth and improved coding skills.",
-        "Participated Morgorithm algorithm camp, studied various in‑depth algorithms.",
-        "Participated ICPC Sinchon, which is an algorithm competition",
+        'Solved and learned algorithm problems in depth and improved coding skills.',
+        'Participated Morgorithm algorithm camp, studied various in‑depth algorithms.',
+        'Participated ICPC Sinchon, which is an algorithm competition',
       ],
     },
   ];
@@ -128,7 +128,7 @@ export default function ExperiencePage() {
   return (
     <MainWrapper>
       <div className="flex flex-col gap-4">
-        <h2 className={"text-3xl specialShadow " + press.className}>
+        <h2 className={'text-3xl specialShadow ' + press.className}>
           Wonjae Choi
         </h2>
         <p className="text-blue-300">I study and develop blockchain :P</p>
@@ -190,7 +190,7 @@ export default function ExperiencePage() {
         </a>
       </div>
       <section className="flex flex-col gap-10">
-        <h2 className={"text-2xl text-blue-400 " + press.className}>
+        <h2 className={'text-2xl text-blue-400 ' + press.className}>
           ✦ Education ✦
         </h2>
         {education.map((edu, index) => (
@@ -263,7 +263,7 @@ export default function ExperiencePage() {
       </section>
 
       <section className="flex flex-col gap-10">
-        <h2 className={"text-2xl text-blue-400 " + press.className}>
+        <h2 className={'text-2xl text-blue-400 ' + press.className}>
           ✦ Working Experience ✦
         </h2>
         {workingExperience.map((work, index) => (
@@ -334,13 +334,13 @@ export default function ExperiencePage() {
       </section>
 
       <section className="flex flex-col gap-10">
-        <h2 className={"text-xl text-blue-400 " + press.className}>
+        <h2 className={'text-xl text-blue-400 ' + press.className}>
           ✦ Extracurricular Activities ✦
         </h2>
         {extracurricularActivities.map((activity, index) => (
           <div key={index} className="flex flex-col gap-2">
             <h3 className="text-xl text-blue-300">
-              {activity.role} <br /> {activity.organization},{" "}
+              {activity.role} <br /> {activity.organization},{' '}
               {activity.institution}
             </h3>
             <p className="text-blue-200">{activity.duration}</p>
