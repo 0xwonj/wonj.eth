@@ -57,5 +57,5 @@ This website is deployed on [Vercel](https://vercel.com). The deployment is done
 ├── posts         # Markdown files for Blog
 ├── public        # Static files
 ├── assets        # Assets for github README
-└── [config]      # Configuration files
+└── [configs]     # Configuration files
 ```
