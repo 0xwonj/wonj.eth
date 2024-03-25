@@ -128,17 +128,21 @@ export default function ExperiencePage() {
   return (
     <MainWrapper>
       <div className="flex flex-col gap-4">
-        <h2 className={'text-3xl specialShadow ' + press.className}>
-          Wonjae Choi
-        </h2>
-        <p className="text-blue-300">I study and develop blockchain :P</p>
+        <div className="flex justify-center items-center sm:justify-start">
+          <h2 className={'text-3xl specialShadow ' + press.className}>
+            Wonjae Choi
+          </h2>
+        </div>
+        {/* <p className="text-blue-300">I study and develop blockchain :P</p> */}
       </div>
       <div className="flex flex-col sm:flex-row sm:items-stretch gap-8 text-blue-400">
-        <img
-          className="rounded-full w-32"
-          src="profile.jpg"
-          alt="profile-img"
-        />
+        <div className="flex justify-center sm:justify-start items-center">
+          <img
+            className="rounded-full w-48 sm:w-32"
+            src="profile.jpg"
+            alt="profile-img"
+          />
+        </div>
         <div className="flex flex-col gap-2 text-base sm:text-lg">
           <div className="flex items-center flex-1 gap-2 ">
             <div className="grid place-items-center w-8">
@@ -161,18 +165,19 @@ export default function ExperiencePage() {
         </div>
       </div>
       <p>
-        Hi, I'm Wonjae Choi, a blockchain developer and researcher at SNU VMO
-        Lab and a member of Decipher. I'm currently studying and developing
-        blockchain focusing on the scalability and security of blockchain. I'm
-        also building something in stealth mode.
+        Hi, I'm Wonjae Choi, a passionate blockchain developer and researcher.
+        I'm currently studying and developing blockchain focusing on the
+        scalability and security of blockchain. I'm also building something in
+        stealth mode.
       </p>
-      <div className="text-blue-300 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-8">
+      <hr className="border-t-2 border-blue-200" />
+      {/* <div className="text-blue-300 flex flex-row gap-2 sm:items-center gap-4 sm:gap-8">
         <a
           href="mailto:choi@wonj.me"
           className="hover:text-blue-100 duration-200 flex items-center gap-4"
         >
           <i className="fa-solid fa-arrow-right -rotate-45"></i>
-          <p>Email me</p>
+          <p>Email</p>
         </a>
         <a
           className="hover:text-blue-100 duration-200"
@@ -188,7 +193,7 @@ export default function ExperiencePage() {
         >
           GitHub
         </a>
-      </div>
+      </div> */}
       <section className="flex flex-col gap-10">
         <h2 className={'text-2xl text-blue-400 ' + press.className}>
           ✦ Education ✦
@@ -213,7 +218,7 @@ export default function ExperiencePage() {
                 <a
                   href={edu.website}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-solid fa-globe"></i>
@@ -225,7 +230,7 @@ export default function ExperiencePage() {
                 <a
                   href={edu.github}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-brands fa-github"></i>
@@ -237,7 +242,7 @@ export default function ExperiencePage() {
                 <a
                   href={edu.twitter}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-brands fa-twitter"></i>
@@ -249,7 +254,7 @@ export default function ExperiencePage() {
                 <a
                   href={edu.link}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-solid fa-link"></i>
@@ -284,7 +289,7 @@ export default function ExperiencePage() {
                 <a
                   href={work.website}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-solid fa-globe"></i>
@@ -296,7 +301,7 @@ export default function ExperiencePage() {
                 <a
                   href={work.github}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-brands fa-github"></i>
@@ -308,7 +313,7 @@ export default function ExperiencePage() {
                 <a
                   href={work.twitter}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-brands fa-twitter"></i>
@@ -320,7 +325,7 @@ export default function ExperiencePage() {
                 <a
                   href={work.link}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-solid fa-link"></i>
@@ -356,7 +361,7 @@ export default function ExperiencePage() {
                 <a
                   href={activity.website}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-solid fa-globe"></i>
@@ -368,7 +373,7 @@ export default function ExperiencePage() {
                 <a
                   href={activity.github}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-brands fa-github"></i>
@@ -380,7 +385,7 @@ export default function ExperiencePage() {
                 <a
                   href={activity.twitter}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-brands fa-twitter"></i>
@@ -392,7 +397,7 @@ export default function ExperiencePage() {
                 <a
                   href={activity.link}
                   target="_blank"
-                  className="flex items-center gap-2 hover:text-blue-300 duration-200"
+                  className="flex items-center gap-2 hover:text-blue-400 duration-200"
                 >
                   <div>
                     <i className="fa-solid fa-link"></i>

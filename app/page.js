@@ -216,14 +216,14 @@ const HomePage = () => {
         price={0}
         link={'/guestbook'}
       />
-      <section className="gap-4 flex items-center justify-center flex-wrap">
+      <section className="sm:gap-4 flex items-center justify-between sm:justify-center flex-wrap">
         {socials.map((link, linkIndex) => {
           return (
             <Link
               href={link.link}
               target={link.target}
               key={linkIndex}
-              className="bg-blue-950 text-blue-100 rounded-lg btnBorder relative grid place-items-center p-3 hover:text-cyan-300"
+              className="bg-blue-950 text-blue-100 rounded-lg btnBorder relative grid place-items-center p-3 hover:text-sky-300"
             >
               <i className={' text-3xl  ' + link.icon}></i>
             </Link>

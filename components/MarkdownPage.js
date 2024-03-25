@@ -4,11 +4,12 @@ import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
 import Link from 'next/link';
 import MainWrapper from '@/components/MainWrapper';
+import Comments from '@/components/Comments';
 
 import { Press_Start_2P } from 'next/font/google';
 const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
-const titleColorClasses = {
+const purpleClasses = {
   50: 'text-purple-50',
   100: 'text-purple-100',
   200: 'text-purple-200',
@@ -17,6 +18,37 @@ const titleColorClasses = {
   500: 'text-purple-500',
   'hover-700': 'hover:text-purple-700',
   'after-bg-500': 'after:bg-purple-500',
+  'border-100': 'border-purple-100',
+};
+
+const pinkClasses = {
+  50: 'text-pink-50',
+  100: 'text-pink-100',
+  200: 'text-pink-200',
+  300: 'text-pink-300',
+  400: 'text-pink-400',
+  500: 'text-pink-500',
+  'hover-700': 'hover:text-pink-700',
+  'after-bg-500': 'after:bg-pink-500',
+  'border-100': 'border-pink-100',
+};
+
+const blueClasses = {
+  50: 'text-blue-50',
+  100: 'text-blue-100',
+  200: 'text-blue-200',
+  300: 'text-blue-300',
+  400: 'text-blue-400',
+  500: 'text-blue-500',
+  'hover-700': 'hover:text-blue-700',
+  'after-bg-500': 'after:bg-blue-500',
+  'border-100': 'border-blue-100',
+};
+
+const colorMappings = {
+  purple: purpleClasses,
+  pink: pinkClasses,
+  blue: blueClasses,
 };
 
 const commonOverrides = {
@@ -35,6 +67,8 @@ const getMarkdownContent = (folder, slug) => {
 
 const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
   const { content, data } = getMarkdownContent(folder, slug);
+
+  const titleColorClasses = colorMappings[titleColor] || blueClasses;
 
   const markdownOptions = {
     overrides: {
@@ -105,7 +139,7 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
         >
           <p className="group-hover:text-[#030615] duration-200">&larr; Back</p>
         </Link>
-        <div className="my-12 ">
+        <div className="my-4">
           <h1
             className={`text-2xl ${titleColorClasses[100]} ` + press.className}
           >
@@ -116,14 +150,8 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
         <article className="prose lg:prose-l text-blue-100">
           <Markdown options={markdownOptions}>{content}</Markdown>
         </article>
-        <script
-          src="https://utteranc.es/client.js"
-          repo="wonj1012/comments"
-          issue-term="pathname"
-          theme="dark-blue"
-          crossOrigin="anonymous"
-          async
-        ></script>
+        <hr className={`my-8 border-t-2 ${titleColorClasses['border-100']}`} />
+        <Comments />
       </div>
     </MainWrapper>
   );
