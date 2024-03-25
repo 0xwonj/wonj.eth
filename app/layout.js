@@ -2,7 +2,7 @@ import './globals.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
-
+import { Analytics } from '@vercel/analytics/react';
 import { Inter, Press_Start_2P, Roboto_Mono } from 'next/font/google';
 import Head from './head';
 const space = Roboto_Mono({ subsets: ['latin'], weight: ['400', '700'] });
@@ -69,6 +69,7 @@ export default function RootLayout({ children }) {
         {header}
         {children}
         {footer}
+        <Analytics />
       </body>
     </html>
   );
