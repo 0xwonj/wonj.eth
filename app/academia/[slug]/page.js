@@ -11,7 +11,7 @@ export const generateStaticParams = async () => {
 export async function generateMetadata({ params, searchParams }, parent) {
   const id = params?.slug ? ' ⋅ ' + params?.slug : '';
   return {
-    title: `Academia | Wonj${id.replaceAll('_', ' ')}`,
+    title: `Wonj ⋅ Academia${id.replaceAll('_', ' ')}`,
   };
 }
 
