@@ -27,7 +27,30 @@ const PostPreview = props => {
           {props.title}
         </h2>
       </Link>
-      <p className="">&rarr; {props.subtitle}</p>
+      <div className="flex items-center justify-between">
+        <p>&rarr; {props.subtitle}</p>
+        <p className="whitespace-nowrap text-xs capitalize">
+          {props.category === 'blockchain' ? (
+            <Link href="/academia/blockchain">
+              <p className={`text-green-300 ${press.className}`}>
+                {props.category.replaceAll('-', ' ')}
+              </p>
+            </Link>
+          ) : props.category === 'computer-science' ? (
+            <Link href="/academia/computer-science">
+              <p className={`text-amber-300 ${press.className}`}>
+                {props.category.replaceAll('-', ' ')}
+              </p>
+            </Link>
+          ) : (
+            <Link href="/academia/etc">
+              <p className={`text-cyan-300 ${press.className}`}>
+                {props.category.replaceAll('-', ' ')}
+              </p>
+            </Link>
+          )}
+        </p>
+      </div>
     </div>
   );
 };

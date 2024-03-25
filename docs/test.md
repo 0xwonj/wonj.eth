@@ -3,6 +3,7 @@ title: 'Test - Etc'
 subtitle: 'This is a test post for etc category.'
 date: '2024-03-25'
 category: 'something'
+subcategory: 'etc'
 ---
 
 ## Test Post

@@ -13,6 +13,7 @@ const getPostMetadata = (basePath, category = null) => {
       title: matterResult.data.title,
       slug: fileName.replace('.md', ''),
       category: matterResult.data.category,
+      subcategory: matterResult.data.subcategory,
     };
 
     metadata.date = matterResult.data.date;
