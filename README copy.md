@@ -1,3 +1,0 @@
-# Wonj
-
-My personal website.
