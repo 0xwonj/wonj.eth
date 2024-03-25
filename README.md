@@ -49,23 +49,13 @@ This website is deployed on [Vercel](https://vercel.com). The deployment is done
 
 ```bash
 .
-├── app        # Next.js application
-│   ├── about
-│   ├── academia
-│   ├── api
-│   ├── blog
-│   ├── guestbook
-│   ├── hobbies
-│   ├── honors
-│   ├── interests
-│   ├── myself
-│   ├── paper
-│   ├── projects
-│   ├── skills
-│   └── web3
-├── components # React components
-├── docs       # Markdown files for Academia
-├── posts      # Markdown files for Blog
-├── public     # Static files
-└── assets     # Assets for github README
+├── app           # Next.js application
+│   ├── api       # API routes
+│   └── [pages]   # Pages
+├── components    # React components
+├── docs          # Markdown files for Academia
+├── posts         # Markdown files for Blog
+├── public        # Static files
+├── assets        # Assets for github README
+└── [config]      # Configuration files
 ```
