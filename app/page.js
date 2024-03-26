@@ -199,9 +199,10 @@ const HomePage = () => {
   ];
 
   let planBenefits = [
-    'Welcome to my website 🎉',
-    'Feel free to contact me 📧',
-    'Leave a comment if any 📝',
+    '🎉 Welcome to my website',
+    '📧 Feel free to contact me',
+    '📝 Leave a comment if any',
+    '👻 Connecting wallet does nothing, just for fun!',
   ];
 
   return (

@@ -1,12 +1,18 @@
 import './globals.css';
-import Image from 'next/image';
+import { headers } from 'next/headers';
 import Link from 'next/link';
-import Script from 'next/script';
+
 import { Analytics } from '@vercel/analytics/react';
+
+import { cookieToInitialState } from 'wagmi';
+
+import { config } from '@/config/wagmi';
+import Web3ModalProvider from '@/components/Web3ModalProvider';
+
 import { Inter, Press_Start_2P, Roboto_Mono } from 'next/font/google';
 import Head from './head';
+
 const space = Roboto_Mono({ subsets: ['latin'], weight: ['400', '700'] });
-// const inter = Inter({ subsets: ["latin"] });
 const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata = {
@@ -57,6 +63,8 @@ export default function RootLayout({ children }) {
     </footer>
   );
 
+  const initialState = cookieToInitialState(config, headers().get('cookie'));
+
   return (
     <html lang="en">
       <Head />
@@ -66,10 +74,17 @@ export default function RootLayout({ children }) {
           space.className
         }
       >
-        {header}
-        {children}
-        {footer}
-        <Analytics />
+        <Web3ModalProvider initialState={initialState}>
+          <div className="flex justify-end gap-1">
+            <w3m-network-button />
+            <w3m-button label="Connect" />
+          </div>
+
+          {header}
+          {children}
+          {footer}
+          <Analytics />
+        </Web3ModalProvider>
       </body>
     </html>
   );
