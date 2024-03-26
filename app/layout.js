@@ -9,7 +9,7 @@ import { cookieToInitialState } from 'wagmi';
 import { config } from '@/config/wagmi';
 import Web3ModalProvider from '@/components/Web3ModalProvider';
 
-import { Inter, Press_Start_2P, Roboto_Mono } from 'next/font/google';
+import { Press_Start_2P, Roboto_Mono } from 'next/font/google';
 import Head from './head';
 
 const space = Roboto_Mono({ subsets: ['latin'], weight: ['400', '700'] });
