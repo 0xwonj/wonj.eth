@@ -17,7 +17,6 @@ function PlanBenefits(props) {
       {benefits.map((benefit, benefitIndex) => {
         return (
           <li key={benefitIndex} className="">
-            <i className="fa-solid fa-check text-emerald-300 pr-2"></i>
             {benefit}
           </li>
         );
@@ -37,9 +36,6 @@ export default function Plaque(props) {
         }
       >
         <div className="flex flex-col gap-4 justify-center">
-          {/* <h3 className={'text-4xl text-center  ' + press.className}>
-                        <span className='textGradient'>✦</span>
-                    </h3> */}
           <h3 className={'text-xl text-center ' + press.className}>
             <span className="textGradient">✦ {name} ✦</span>
           </h3>
