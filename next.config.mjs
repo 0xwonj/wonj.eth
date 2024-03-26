@@ -21,8 +21,8 @@ const nextConfig = {
 
     config.optimization.splitChunks = {
       chunks: 'all',
-      minSize: 20000,
-      maxSize: 0,
+      minSize: 0,
+      maxSize: 20000,
       minChunks: 1,
       maxAsyncRequests: 30,
       maxInitialRequests: 30,
@@ -31,6 +31,12 @@ const nextConfig = {
         defaultVendors: {
           test: /[\\/]node_modules[\\/]/,
           priority: -10,
+          reuseExistingChunk: true,
+        },
+        frequentlyUpdated: {
+          name: 'frequently-updated',
+          test: /[\\/]src[\\/](components|hooks)[\\/]/,
+          priority: -9,
           reuseExistingChunk: true,
         },
         default: {
