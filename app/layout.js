@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
         }
       >
         <Web3ModalProvider initialState={initialState}>
-          <div className="flex justify-end gap-1">
+          <div className="flex justify-center sm:justify-end gap-1">
             <w3m-network-button />
             <w3m-button label="Connect" />
           </div>
