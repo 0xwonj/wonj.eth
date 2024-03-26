@@ -43,7 +43,7 @@ const PostPreview = props => {
 };
 
 export default function PostsPage() {
-  const postMetadata = getPostMetadata('docs', 'blockchain');
+  const postMetadata = getPostMetadata('academia', 'blockchain');
 
   return (
     <MainWrapper>

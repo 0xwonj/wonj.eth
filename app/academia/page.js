@@ -38,9 +38,7 @@ const PostPreview = props => {
             </Link>
           ) : props.category === 'computer-science' ? (
             <Link href="/academia/computer-science">
-              <p className={`text-amber-300 ${press.className}`}>
-                {props.category.replaceAll('-', ' ')}
-              </p>
+              <p className={`text-amber-300 ${press.className}`}>{'CS'}</p>
             </Link>
           ) : (
             <Link href="/academia/etc">
@@ -56,7 +54,7 @@ const PostPreview = props => {
 };
 
 export default function PostsPage() {
-  const postMetadata = getPostMetadata('docs');
+  const postMetadata = getPostMetadata('academia');
 
   return (
     <MainWrapper>
