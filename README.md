@@ -1,4 +1,4 @@
-[![banner-img](assets/banner.png)](https://wonj.me)
+[![banner-img](assets/images/banner.png)](https://wonj.me)
 
 # wonj.eth
 
