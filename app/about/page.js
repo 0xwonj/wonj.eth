@@ -148,19 +148,19 @@ export default function ExperiencePage() {
             <div className="grid place-items-center w-8">
               <i className="fa-solid fa-graduation-cap"></i>
             </div>
-            <p className="">MS/Ph.D Student at SNU VMO Lab</p>
+            MS/Ph.D Student at SNU VMO Lab
           </div>
           <div className="flex items-center flex-1 gap-2 ">
             <div className="grid place-items-center w-8">
               <i className="fa-solid fa-users"></i>
             </div>
-            <p className="">Member of Decipher</p>
+            Member of Decipher
           </div>
           <div className="flex items-center flex-1 gap-2 ">
             <div className="grid place-items-center w-8">
               <i className="fa-solid fa-lightbulb"></i>
             </div>
-            <p className="">Building Something in Stealth Mode..</p>
+            Building Something in Stealth Mode..
           </div>
         </div>
       </div>

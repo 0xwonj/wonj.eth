@@ -60,11 +60,6 @@ function LinkSection(props) {
 }
 
 const HomePage = () => {
-  // const postMetadata = getPostMetadata();
-  // const postPreviews = postMetadata.map((post) => (
-  //   <PostPreview key={post.slug} {...post} />
-  // ));
-
   let profile = [
     {
       name: 'About',

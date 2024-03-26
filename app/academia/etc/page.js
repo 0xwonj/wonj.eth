@@ -14,9 +14,9 @@ export const metadata = {
 const PostPreview = props => {
   return (
     <div className="flex flex-col gap-2">
-      <p className={'text-xs text-purple-300  ' + press.className}>
+      <span className={'text-xs text-purple-300  ' + press.className}>
         {props.date}
-      </p>
+      </span>
       <Link href={`/academia/etc/${props.slug}`}>
         <h2
           className={
@@ -28,22 +28,22 @@ const PostPreview = props => {
         </h2>
       </Link>
       <div className="flex items-center justify-between">
-        <p className="">&rarr; {props.subtitle}</p>
-        <p
+        <span className="">&rarr; {props.subtitle}</span>
+        <span
           className={
             'whitespace-nowrap text-xs capitalize text-cyan-300 ' +
             press.className
           }
         >
           {props.subcategory.replaceAll('-', ' ')}
-        </p>
+        </span>
       </div>
     </div>
   );
 };
 
 export default function PostsPage() {
-  const postMetadata = getPostMetadata('academia', 'etc');
+  const postMetadata = getPostMetadata('posts/academia', 'etc');
 
   return (
     <MainWrapper>

@@ -14,9 +14,9 @@ export const metadata = {
 const PostPreview = props => {
   return (
     <div className="flex flex-col gap-2">
-      <p className={'text-xs text-pink-300  ' + press.className}>
+      <span className={'text-xs text-pink-300  ' + press.className}>
         {props.date}
-      </p>
+      </span>
       <Link href={`/blog/${props.slug}`}>
         <h2
           className={
@@ -27,13 +27,13 @@ const PostPreview = props => {
           {props.title}
         </h2>
       </Link>
-      <p className="">&rarr; {props.subtitle}</p>
+      &rarr; {props.subtitle}
     </div>
   );
 };
 
 export default function PostsPage() {
-  const postMetadata = getPostMetadata('blog');
+  const postMetadata = getPostMetadata('posts/blog');
 
   return (
     <MainWrapper>
