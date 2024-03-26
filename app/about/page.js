@@ -223,7 +223,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-solid fa-globe"></i>
                   </div>
-                  <p className="">Website</p>
+                  Website
                 </a>
               )}
               {edu.github && (
@@ -235,7 +235,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-brands fa-github"></i>
                   </div>
-                  <p className="">Github</p>
+                  Github
                 </a>
               )}
               {edu.twitter && (
@@ -247,7 +247,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-brands fa-twitter"></i>
                   </div>
-                  <p className="">Twitter</p>
+                  Twitter
                 </a>
               )}
               {edu.link && (
@@ -259,7 +259,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-solid fa-link"></i>
                   </div>
-                  <p className="">Link</p>
+                  Link
                 </a>
               )}
             </div>
@@ -294,7 +294,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-solid fa-globe"></i>
                   </div>
-                  <p className="">Website</p>
+                  Website
                 </a>
               )}
               {work.github && (
@@ -306,7 +306,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-brands fa-github"></i>
                   </div>
-                  <p className="">Github</p>
+                  Github
                 </a>
               )}
               {work.twitter && (
@@ -318,7 +318,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-brands fa-twitter"></i>
                   </div>
-                  <p className="">Twitter</p>
+                  Twitter
                 </a>
               )}
               {work.link && (
@@ -330,7 +330,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-solid fa-link"></i>
                   </div>
-                  <p className="">Link</p>
+                  Link
                 </a>
               )}
             </div>
@@ -366,7 +366,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-solid fa-globe"></i>
                   </div>
-                  <p className="">Website</p>
+                  Website
                 </a>
               )}
               {activity.github && (
@@ -378,7 +378,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-brands fa-github"></i>
                   </div>
-                  <p className="">Github</p>
+                  Github
                 </a>
               )}
               {activity.twitter && (
@@ -390,7 +390,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-brands fa-twitter"></i>
                   </div>
-                  <p className="">Twitter</p>
+                  Twitter
                 </a>
               )}
               {activity.link && (
@@ -402,7 +402,7 @@ export default function ExperiencePage() {
                   <div>
                     <i className="fa-solid fa-link"></i>
                   </div>
-                  <p className="">Link</p>
+                  Link
                 </a>
               )}
             </div>
