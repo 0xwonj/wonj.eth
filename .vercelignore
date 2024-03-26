@@ -1,0 +1,10 @@
+node_modules
+assets
+.git
+.gitignore
+.prettierrc
+.prettieriignore
+Dockerfile
+README.md
+LICENSE.md
+CNAME
