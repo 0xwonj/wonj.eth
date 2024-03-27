@@ -54,8 +54,10 @@ const nextConfig = {
 
   experimental: {
     outputFileTracingExcludes: {
+      'blog.js': ['.next/cache/webpack'],
       'blog/': ['.next/cache/webpack'],
       'blog/[slug]': ['.next/cache/webpack'],
+      'academia.js': ['.next/cache/webpack'],
       'academia/': ['.next/cache/webpack'],
       'academia/[slug]': ['.next/cache/webpack'],
     },
