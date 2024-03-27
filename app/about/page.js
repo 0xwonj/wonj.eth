@@ -9,7 +9,7 @@ export const metadata = {
   description: 'Blockchain Developer & Researcher at SNU VMO Lab and Decipher',
 };
 
-export default function ExperiencePage() {
+export default function AboutPage() {
   let education = [
     {
       institution: 'Seoul National University',
