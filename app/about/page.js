@@ -131,7 +131,6 @@ export default function ExperiencePage() {
             Wonjae Choi
           </h2>
         </div>
-        {/* <p className="text-blue-300">I study and develop blockchain :P</p> */}
       </div>
       <div className="flex flex-col sm:flex-row sm:items-stretch gap-8 text-blue-400">
         <div className="flex justify-center sm:justify-start items-center">
@@ -169,29 +168,6 @@ export default function ExperiencePage() {
         stealth mode.
       </p>
       <hr className="border-t-2 border-blue-200" />
-      {/* <div className="text-blue-300 flex flex-row gap-2 sm:items-center gap-4 sm:gap-8">
-        <a
-          href="mailto:choi@wonj.me"
-          className="hover:text-blue-100 duration-200 flex items-center gap-4"
-        >
-          <i className="fa-solid fa-arrow-right -rotate-45"></i>
-          <p>Email</p>
-        </a>
-        <a
-          className="hover:text-blue-100 duration-200"
-          href="https://www.linkedin.com/in/wonj/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-        <a
-          className="hover:text-blue-100 duration-200"
-          href="https://github.com/wonj1012"
-          target="_blank"
-        >
-          GitHub
-        </a>
-      </div> */}
       <section className="flex flex-col gap-10">
         <h2 className={'text-2xl text-blue-400 ' + press.className}>
           ✦ Education ✦

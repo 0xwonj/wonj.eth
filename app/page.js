@@ -76,25 +76,25 @@ const HomePage = () => {
     {
       name: 'Projects',
       icon: 'fa-solid fa-project-diagram',
-      link: '/projects',
+      link: '/wip',
       target: '',
     },
     {
       name: 'Honors',
       icon: 'fa-solid fa-award',
-      link: '/honors',
+      link: '/wip',
       target: '',
     },
     {
       name: 'Skills',
       icon: 'fa-solid fa-tools',
-      link: '/skills',
+      link: '/wip',
       target: '',
     },
     {
       name: 'Interests',
       icon: 'fa-solid fa-search',
-      link: '/interests',
+      link: '/wip',
       target: '',
     },
   ];
@@ -130,20 +130,20 @@ const HomePage = () => {
     {
       name: 'Myself',
       icon: 'fa-solid fa-user',
-      link: '/myself',
+      link: '/wip',
       target: '',
     },
     {
       name: 'WEB3',
       icon: 'fa-solid fa-globe',
-      link: '/web3',
+      link: '/wip',
       target: '',
     },
     { name: 'Blog', icon: 'fa-solid fa-bookmark', link: '/blog', target: '' },
     {
       name: 'Hobbies',
       icon: 'fa-solid fa-gamepad',
-      link: '/hobbies',
+      link: '/wip',
       target: '',
     },
     {
@@ -155,7 +155,7 @@ const HomePage = () => {
     {
       name: 'Newsletter',
       icon: 'fa-regular fa-newspaper',
-      link: '/subscribe',
+      link: '/wip',
       target: '_blank',
     },
   ];
