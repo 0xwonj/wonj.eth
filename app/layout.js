@@ -9,9 +9,10 @@ import { config } from '@/config/wagmi';
 import Web3ModalProvider from '@/components/Web3ModalProvider';
 
 import Head from './head';
-import { IBM_Plex_Mono } from 'next/font/google';
 
-const font = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '700'] });
+import { Roboto_Mono } from 'next/font/google';
+
+const mono = Roboto_Mono({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata = {
   title: 'Wonj',
@@ -53,7 +54,7 @@ export default function RootLayout({ children }) {
       <body
         className={
           'bg-[#030615] text-blue-100 flex flex-col gap-4 sm:gap-6 md:gap-10 min-h-screen p-4 text-sm sm:text-base ' +
-          font.className
+          mono.className
         }
       >
         <Web3ModalProvider initialState={initialState}>
