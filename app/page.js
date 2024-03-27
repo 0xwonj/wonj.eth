@@ -1,10 +1,7 @@
 import Link from 'next/link';
 import MainWrapper from '@/components/MainWrapper';
 
-import { Inter, Press_Start_2P } from 'next/font/google';
 import Plaque from '@/components/Plaque';
-const inter = Inter({ subsets: ['latin'] });
-const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
 
 function LinkSection(props) {
   const { title, array, color, children } = props;
@@ -25,7 +22,7 @@ function LinkSection(props) {
 
   return (
     <section className="flex flex-col gap-4 grid grid-cols-1 md:grid-cols-2">
-      <h3 className={`${textColorClass} md:col-span-2 ${press.className}`}>
+      <h3 className={`${textColorClass} md:col-span-2 font-press-start`}>
         ✦ {title} ✦
       </h3>
       {array &&
@@ -47,7 +44,7 @@ function LinkSection(props) {
               <p
                 className={`${textSizeClass} ${
                   [].includes(link.name) ? 'specialShadow' : ''
-                } ${press.className}`}
+                } font-press-start`}
               >
                 {link.name}
               </p>
@@ -59,7 +56,7 @@ function LinkSection(props) {
   );
 }
 
-const HomePage = () => {
+export default function HomePage() {
   let profile = [
     {
       name: 'About',
@@ -228,6 +225,4 @@ const HomePage = () => {
       </section>
     </MainWrapper>
   );
-};
-
-export default HomePage;
+}

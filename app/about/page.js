@@ -136,7 +136,7 @@ export default function ExperiencePage() {
         <div className="flex justify-center sm:justify-start items-center">
           <img
             className="rounded-full w-48 sm:w-32"
-            src="profile.jpg"
+            src="images/profile.jpg"
             alt="profile-img"
           />
         </div>
