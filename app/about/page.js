@@ -156,7 +156,7 @@ export default function AboutPage() {
             <div className="grid place-items-center w-8">
               <i className="fa-solid fa-graduation-cap"></i>
             </div>
-            MS/Ph.D Student at SNU VMO Lab
+            Blockchain Researcher at SNU VMO Lab
           </div>
           <div className="flex items-center flex-1 gap-2 ">
             <div className="grid place-items-center w-8">
