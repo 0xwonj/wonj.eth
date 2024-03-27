@@ -82,9 +82,9 @@ export default function RootLayout({ children }) {
             <ScrollToTopButton />
           </div>
         </Web3ModalProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
-      <Analytics />
-      <SpeedInsights />
     </html>
   );
 }
