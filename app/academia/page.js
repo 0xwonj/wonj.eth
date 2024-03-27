@@ -3,9 +3,6 @@ import getPostMetadata from '@/components/getPostMetadata';
 import Link from 'next/link';
 import React from 'react';
 
-import { Inter, Press_Start_2P, Space_Mono } from 'next/font/google';
-const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
-
 export const metadata = {
   title: 'Wonj ⋅ Academia',
   description: '',
@@ -14,16 +11,11 @@ export const metadata = {
 const PostPreview = props => {
   return (
     <div className="flex flex-col gap-2">
-      <span className={'text-xs text-purple-300  ' + press.className}>
+      <span className="text-xs text-purple-300 font-press-start">
         {props.date}
       </span>
       <Link href={`/academia/${props.slug}`}>
-        <h2
-          className={
-            'text-base text-white sm:text-lg md:text-xl hover:text-purple-300 duration-200 ' +
-            press.className
-          }
-        >
+        <h2 className="text-base text-white sm:text-lg md:text-xl hover:text-purple-300 duration-200 font-press-start">
           {props.title}
         </h2>
       </Link>
@@ -32,17 +24,17 @@ const PostPreview = props => {
         <span className="whitespace-nowrap text-xs capitalize">
           {props.category === 'blockchain' ? (
             <Link href="/academia/blockchain">
-              <span className={`text-green-300 ${press.className}`}>
+              <span className="text-green-300 font-press-start">
                 {props.category.replaceAll('-', ' ')}
               </span>
             </Link>
           ) : props.category === 'computer-science' ? (
             <Link href="/academia/computer-science">
-              <span className={`text-amber-300 ${press.className}`}>CS</span>
+              <span className="text-amber-300 font-press-start">CS</span>
             </Link>
           ) : (
             <Link href="/academia/etc">
-              <span className={`text-cyan-300 ${press.className}`}>
+              <span className="text-cyan-300 font-press-start">
                 {props.category.replaceAll('-', ' ')}
               </span>
             </Link>
@@ -58,7 +50,7 @@ export default function PostsPage() {
 
   return (
     <MainWrapper>
-      <h3 className={'text-purple-400 ' + press.className}>✦ Academia ✦</h3>
+      <h3 className="text-purple-400 font-press-start">✦ Academia ✦</h3>
       {postMetadata
         .sort((a, b) => {
           return new Date(b.date) - new Date(a.date);
