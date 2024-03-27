@@ -52,6 +52,15 @@ const nextConfig = {
     return config;
   },
 
+  experimental: {
+    outputFileTracingExcludes: {
+      'blog/': ['.next/cache/webpack'],
+      'blog/[slug]': ['.next/cache/webpack'],
+      'academia/': ['.next/cache/webpack'],
+      'academia/[slug]': ['.next/cache/webpack'],
+    },
+  },
+
   async headers() {
     return [
       {
