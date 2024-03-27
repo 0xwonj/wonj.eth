@@ -5,7 +5,7 @@ const SectionComponent = ({ items, renderLink }) => {
     <section className="flex flex-col gap-10">
       {items.map((item, index) => (
         <div key={index} className="flex flex-col gap-2">
-          <h3 className="text-xl text-blue-300">
+          <h3 className="text-xl text-blue-300 text-bold">
             {item.institution}
             {item.location ? `, ${item.location}` : ''} <br /> {item.title}
           </h3>
