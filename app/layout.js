@@ -3,6 +3,7 @@ import { headers } from 'next/headers';
 import Link from 'next/link';
 
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { cookieToInitialState } from 'wagmi';
 import { config } from '@/config/wagmi';
@@ -75,9 +76,10 @@ export default function RootLayout({ children }) {
           {header}
           {children}
           {footer}
-          <Analytics />
         </Web3ModalProvider>
       </body>
+      <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
