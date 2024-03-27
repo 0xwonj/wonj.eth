@@ -1,4 +1,3 @@
-// components/MarkdownPage.js
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -46,10 +45,23 @@ const blueClasses = {
   'border-100': 'border-blue-100',
 };
 
+const orangeClasses = {
+  50: 'text-orange-50',
+  100: 'text-orange-100',
+  200: 'text-orange-200',
+  300: 'text-orange-300',
+  400: 'text-orange-400',
+  500: 'text-orange-500',
+  'hover-700': 'hover:text-orange-700',
+  'after-bg-500': 'after:bg-orange-500',
+  'border-100': 'border-orange-100',
+};
+
 const colorMappings = {
   purple: purpleClasses,
   pink: pinkClasses,
   blue: blueClasses,
+  orange: orangeClasses,
 };
 
 const commonOverrides = {

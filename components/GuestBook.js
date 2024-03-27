@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React, { useState } from 'react';
 import BlueBtn from './BlueBtn';
 import { Press_Start_2P } from 'next/font/google';

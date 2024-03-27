@@ -11,6 +11,9 @@ function LinkSection(props) {
       purple: 'text-purple-400',
       pink: 'text-pink-400',
       blue: 'text-blue-400',
+      amber: 'text-amber-400',
+      orange: 'text-orange-400',
+      red: 'text-red-400',
     }[color] || 'text-blue-400';
 
   const hoverTextColorClass =
@@ -18,6 +21,9 @@ function LinkSection(props) {
       purple: 'hover:text-purple-300',
       pink: 'hover:text-pink-300',
       blue: 'hover:text-blue-300',
+      amber: 'hover:text-amber-300',
+      orange: 'hover:text-orange-300',
+      red: 'hover:text-red-300',
     }[color] || 'hover:text-blue-300';
 
   return (
@@ -133,7 +139,7 @@ export default function HomePage() {
     {
       name: 'WEB3',
       icon: 'fa-solid fa-globe',
-      link: '/wip',
+      link: '/web3',
       target: '',
     },
     { name: 'Blog', icon: 'fa-solid fa-bookmark', link: '/blog', target: '' },
@@ -201,7 +207,7 @@ export default function HomePage() {
     <MainWrapper>
       <LinkSection title={'Profile'} array={profile} color={'blue'} />
       <LinkSection title={'Academia'} array={academia} color={'purple'} />
-      <LinkSection title={'Personal'} array={personal} color={'pink'} />
+      <LinkSection title={'Personal'} array={personal} color={'orange'} />
       <Plaque
         benefits={planBenefits}
         message={''}

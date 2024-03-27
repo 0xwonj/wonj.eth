@@ -30,7 +30,7 @@ const PostPreview = props => {
             </Link>
           ) : props.category === 'computer-science' ? (
             <Link href="/academia/computer-science">
-              <span className="text-amber-300 font-press-start">CS</span>
+              <span className="text-red-300 font-press-start">CS</span>
             </Link>
           ) : (
             <Link href="/academia/etc">

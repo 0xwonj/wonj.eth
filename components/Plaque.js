@@ -1,8 +1,5 @@
-import { Press_Start_2P } from 'next/font/google';
-import Link from 'next/link';
 import React from 'react';
-
-const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
+import Link from 'next/link';
 
 function PlanBenefits(props) {
   const { sm, benefits } = props;
@@ -36,19 +33,15 @@ export default function Plaque(props) {
         }
       >
         <div className="flex flex-col gap-4 justify-center">
-          <h3 className={'text-xl text-center ' + press.className}>
+          <h3 className="text-xl text-center font-press-start">
             <span className="textGradient">✦ {name} ✦</span>
           </h3>
           <div className="flex items-end gap-2 justify-center">
-            <h5 className={'text-base text-blue-200  ' + press.className}>$</h5>
-            <h5
-              className={
-                'text-3xl sm:text-4xl text-blue-200  ' + press.className
-              }
-            >
+            <h5 className="text-base text-blue-200  font-press-start">$</h5>
+            <h5 className="text-3xl sm:text-4xl text-blue-200  font-press-start">
               {price}
             </h5>
-            <h5 className={'text-base text-blue-200  ' + press.className}></h5>
+            <h5 className="text-base text-blue-200  font-press-start"></h5>
           </div>
           {benefits && <PlanBenefits sm benefits={benefits} />}
           <Link
@@ -56,7 +49,7 @@ export default function Plaque(props) {
             target=""
             className="mx-auto mt-2 duration-200 hover:opacity-70 px-4 py-2 rounded-md bg-blue-300 text-slate-900"
           >
-            <h5 className={'text-sm  ' + press.className}>📝 Comments?</h5>
+            <h5 className="text-sm  font-press-start">📝 Comments?</h5>
           </Link>
         </div>
         {benefits && <PlanBenefits benefits={benefits} />}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function BlueBtn(props) {
   const { btnText, noShadow, lg } = props;
   return (

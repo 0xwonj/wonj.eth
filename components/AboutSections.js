@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionComponent from './SectionComponent';
 
 const AboutSections = ({
@@ -18,7 +17,6 @@ const AboutSections = ({
           <div>
             <i className="fa-solid fa-globe text-xl"></i>
           </div>
-          {/* <span className="font-press-start text-xs">Website</span> */}
         </a>
       )}
       {item.links?.github && (
@@ -31,7 +29,6 @@ const AboutSections = ({
           <div>
             <i className="fa-brands fa-github text-xl"></i>
           </div>
-          {/* <span className="font-press-start text-xs">Github</span> */}
         </a>
       )}
       {item.links?.twitter && (
@@ -44,7 +41,6 @@ const AboutSections = ({
           <div>
             <i className="fa-brands fa-twitter text-xl"></i>
           </div>
-          {/* <span className="font-press-start text-xs">Twitter</span> */}
         </a>
       )}
       {item.links?.link && (
@@ -57,7 +53,6 @@ const AboutSections = ({
           <div>
             <i className="fa-solid fa-link text-xl"></i>
           </div>
-          {/* <span className="font-press-start text-xs">Link</span> */}
         </a>
       )}
     </>

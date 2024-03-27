@@ -6,8 +6,10 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { cookieToInitialState } from 'wagmi';
+
 import { config } from '@/config/wagmi';
 import Web3ModalProvider from '@/components/Web3ModalProvider';
+import ScrollToTopButton from '@/components/ScrollToTop';
 
 import Head from './head';
 
@@ -76,6 +78,9 @@ export default function RootLayout({ children }) {
           {header}
           {children}
           {footer}
+          <div className="hidden lg:flex">
+            <ScrollToTopButton />
+          </div>
         </Web3ModalProvider>
       </body>
       <Analytics />

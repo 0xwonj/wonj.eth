@@ -19,7 +19,7 @@ const PostPage = props => {
   const slug = props.params.slug;
   const folder = 'posts/blog';
   const backLink = '/blog/';
-  const titleColor = 'pink';
+  const titleColor = 'orange';
 
   return (
     <MarkdownPage
