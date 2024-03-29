@@ -33,20 +33,11 @@ const ScrollToTopButton = () => {
           position: 'fixed',
           bottom: '30px',
           right: '30px',
-          background: '#3c82f6',
-          color: 'white',
-          borderRadius: '5px',
-          border: '2px solid #2980b9',
           width: '50px',
           height: '50px',
-          cursor: 'pointer',
           fontFamily: "'Press Start 2P', Sans Serif",
-          fontSize: '28px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 0 0 2.5px #fff',
         }}
+        className="bg-blue-900 text-blue-100 text-xl rounded-lg btnBorder p-3 hover:text-cyan-300"
       >
         ↑
       </button>
