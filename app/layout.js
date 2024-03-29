@@ -49,13 +49,6 @@ export default function RootLayout({ children }) {
     </footer>
   );
 
-  const gtmNoScriptHTML = {
-    __html: `
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNCSR8P9"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    `,
-  };
-
   const initialState = cookieToInitialState(config, headers().get('cookie'));
 
   return (
@@ -67,9 +60,6 @@ export default function RootLayout({ children }) {
           mono.className
         }
       >
-        {/* Google Tag Manager (noscript) */}
-        <noscript dangerouslySetInnerHTML={gtmNoScriptHTML}></noscript>
-        {/* End Google Tag Manager (noscript) */}
         <Web3ModalProvider initialState={initialState}>
           <div className="flex justify-center sm:justify-end gap-1">
             <w3m-network-button />
