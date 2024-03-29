@@ -6,9 +6,6 @@ import Link from 'next/link';
 import MainWrapper from '@/components/MainWrapper';
 import Comments from '@/components/Comments';
 
-import { Press_Start_2P } from 'next/font/google';
-const press = Press_Start_2P({ subsets: ['latin'], weight: ['400'] });
-
 const purpleClasses = {
   50: 'text-purple-50',
   100: 'text-purple-100',
@@ -19,6 +16,7 @@ const purpleClasses = {
   'hover-700': 'hover:text-purple-700',
   'after-bg-500': 'after:bg-purple-500',
   'border-100': 'border-purple-100',
+  'border-400': 'border-purple-400',
 };
 
 const pinkClasses = {
@@ -31,6 +29,7 @@ const pinkClasses = {
   'hover-700': 'hover:text-pink-700',
   'after-bg-500': 'after:bg-pink-500',
   'border-100': 'border-pink-100',
+  'border-400': 'border-pink-400',
 };
 
 const blueClasses = {
@@ -43,6 +42,7 @@ const blueClasses = {
   'hover-700': 'hover:text-blue-700',
   'after-bg-500': 'after:bg-blue-500',
   'border-100': 'border-blue-100',
+  'border-400': 'border-blue-400',
 };
 
 const orangeClasses = {
@@ -55,6 +55,7 @@ const orangeClasses = {
   'hover-700': 'hover:text-orange-700',
   'after-bg-500': 'after:bg-orange-500',
   'border-100': 'border-orange-100',
+  'border-400': 'border-orange-400',
 };
 
 const colorMappings = {
@@ -107,6 +108,13 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
           </h3>
         ),
       },
+      h4: {
+        component: ({ children }) => (
+          <h4 className={`text-lg ${titleColorClasses[200]} font-bold`}>
+            {children}
+          </h4>
+        ),
+      },
       a: {
         component: ({ children, href }) => (
           <a
@@ -135,7 +143,9 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
       },
       blockquote: {
         component: ({ children }) => (
-          <blockquote className="pl-4 border-l-4 border-gray-400 italic text-gray-500">
+          <blockquote
+            className={`pl-4 border-l-4 ${titleColorClasses['border-400']} italic ${titleColorClasses[100]}`}
+          >
             {children}
           </blockquote>
         ),
@@ -153,9 +163,7 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
           <p className="group-hover:text-[#030615] duration-200">&larr; Back</p>
         </Link>
         <div className="my-4">
-          <h1
-            className={`text-2xl ${titleColorClasses[100]} ` + press.className}
-          >
+          <h1 className={`text-2xl font-press-start ${titleColorClasses[100]}`}>
             {data.title}
           </h1>
           <p className={`mt-2 ${titleColorClasses[50]}`}>{data.date}</p>

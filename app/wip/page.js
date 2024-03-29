@@ -15,7 +15,13 @@ export default function WipPage() {
         <i className="text-4xl ml-4 fa-solid fa-person-digging"></i>
       </h1>
       <p>This page is currently under development.</p>
-      <Image src="/images/sorry.gif" alt="Sorry!" width={500} height={500} />
+      <Image
+        src="/images/sorry.gif"
+        alt="Sorry!"
+        width={500}
+        height={500}
+        unoptimized
+      />
     </MainWrapper>
   );
 }
