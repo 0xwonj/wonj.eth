@@ -8,6 +8,12 @@ subcategory: 'etc'
 
 ## Test Post
 
+### Heading 3-1
+
+### Heading 3-2
+
+#### Heading 4
+
 Hello, this post is a test post for etc category. This is a markdown file located in `docs/test.md`. This post is used for testing purposes only.
 
 This is bold text: **Bold Text**
