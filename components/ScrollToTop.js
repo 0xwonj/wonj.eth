@@ -36,10 +36,11 @@ const ScrollToTopButton = () => {
           width: '50px',
           height: '50px',
           fontFamily: "'Press Start 2P', Sans Serif",
+          transform: 'rotate(90deg)',
         }}
-        className="bg-blue-900 text-blue-100 text-xl rounded-lg btnBorder p-3 hover:text-cyan-300"
+        className="specialShadowOrange text-3xl p-3"
       >
-        ↑
+        {'<'}
       </button>
     )
   );
