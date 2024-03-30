@@ -11,7 +11,7 @@ This repository contains source code of the my website. To view the website, vis
 
 ## Technologies
 
-- [Next.js](https://nextjs.org/) for server-side rendering
+- [Next.js](https://nextjs.org/) for frontend framework
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 - [Vercel](https://vercel.com/) for continuous deployment
 - [Wagmi](https://wagmi.sh/) for Web3 functionality
