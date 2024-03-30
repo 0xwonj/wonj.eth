@@ -4,25 +4,25 @@
 
 This repository contains source code of the my website. To view the website, visit [wonj.me](https://wonj.me).
 
-![license-badge](https://4.vercel.app/github/license/wonj1012/wonj.eth)
+[![license-badge](https://4.vercel.app/github/license/wonj1012/wonj.eth)](LICENSE)
 ![language-badge](https://4.vercel.app/github/language/wonj1012/wonj.eth)
-![tag-badge](https://4.vercel.app/github/tag/wonj1012/wonj.eth)
-![issues-badge](https://4.vercel.app/github/issues/wonj1012/wonj.eth)
+[![tag-badge](https://4.vercel.app/github/tag/wonj1012/wonj.eth)](https://github.com/wonj1012/wonj.eth/tags)
+[![issues-badge](https://4.vercel.app/github/issues/wonj1012/wonj.eth)](https://github.com/wonj1012/wonj.eth/issues)
 
 ## Technologies
 
-- **Next.js** for server-side rendering
-- **Tailwind CSS** for styling
-- **Vercel** for continuous deployment
-- **Wagmi** for Web3 functionality
+- [Next.js](https://nextjs.org/) for frontend framework
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Vercel](https://vercel.com/) for continuous deployment
+- [Wagmi](https://wagmi.sh/) for Web3 functionality
 
 ## Branches
 
 To ensure efficient workflow and seamless integration with Vercel for automatic deployment, we follow a specific branching strategy:
 
-- `main`: This is the production branch and is automatically deployed to Vercel. It contains the latest stable version of the website.
+- [`main`](https://github.com/wonj1012/wonj.eth/tree/main): This is the production branch and is automatically deployed to Vercel. It contains the latest stable version of the website.
 
-- `develop`: Our primary development branch. All new features and changes are merged into this branch. Once the development is complete, we create a pull request to merge `develop` into `main`.
+- [`develop`](https://github.com/wonj1012/wonj.eth/tree/develop): Our primary development branch. All new features and changes are merged into this branch. Once the development is complete, we create a pull request to merge `develop` into `main`.
 
 - `feature/*`: For new features and significant changes, we create feature branches from `develop`. Once development is completed, the feature branch is merged back into `develop`. (Currently not in use)
 
@@ -30,19 +30,25 @@ To ensure efficient workflow and seamless integration with Vercel for automatic 
 
 ### Prerequisites
 
-- Node.js
-- npm
-- Vercel (for deployment)
+Before starting, ensure you have the following installed:
+
+- **[Node.js](https://nodejs.org/)**: JavaScript runtime
+- **[npm](https://www.npmjs.com/)**: Package manager for JavaScript
+- **[Git](https://git-scm.com/)**: Version control system
 
 ### Installation
+
+To set up the project locally, run the following command:
 
 ```
 $ npm install
 ```
 
-This installs all the necessary dependencies defined in `package.json`.
+This installs all the necessary dependencies defined in [`package.json`](package.json).
 
 ### Local Development
+
+For local development, start the development server with:
 
 ```
 $ npm dev run
@@ -58,7 +64,7 @@ To ensure code consistency and detect style issues, run:
 $ npm run prettier
 ```
 
-This command formats your code according to the rules defined in `.prettierrc`.
+This command formats your code according to the rules defined in [`.prettierrc`](.prettierrc).
 
 ### Build
 
