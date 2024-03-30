@@ -224,7 +224,7 @@ export default function HomePage() {
               key={linkIndex}
               className="bg-blue-900 text-blue-100 rounded-lg btnBorder relative grid place-items-center p-3 hover:text-cyan-300"
             >
-              <i className={' text-3xl  ' + link.icon}></i>
+              <i className={'text-3xl ' + link.icon}></i>
             </Link>
           );
         })}

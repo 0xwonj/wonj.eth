@@ -21,7 +21,7 @@ createWeb3Modal({
     '--w3m-font-family': '"Press Start 2P", regular',
     '--w3m-font-size-master': '0.44rem',
     '--w3m-color-mix': '#172554',
-    '--w3m-accent': '#0385fe',
+    '--w3m-accent': '#ff8800',
     '--w3m-color-mix-strength': 25,
   },
 });

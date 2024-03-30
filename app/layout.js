@@ -10,6 +10,7 @@ import { cookieToInitialState } from 'wagmi';
 import { config } from '@/config/wagmi';
 import Web3ModalProvider from '@/components/Web3ModalProvider';
 import ScrollToTopButton from '@/components/ScrollToTop';
+import Web3Button from '@/components/Web3Button';
 
 import Head from './head';
 
@@ -61,10 +62,7 @@ export default function RootLayout({ children }) {
         }
       >
         <Web3ModalProvider initialState={initialState}>
-          <div className="flex justify-center sm:justify-end gap-1">
-            <w3m-network-button />
-            <w3m-button label="Connect" />
-          </div>
+          <Web3Button />
           {header}
           {children}
           {footer}
