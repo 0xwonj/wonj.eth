@@ -1,10 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+
 import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
 import Link from 'next/link';
-import MainWrapper from '@/components/MainWrapper';
+import React from 'react';
+
 import Comments from '@/components/Comments';
+import MainWrapper from '@/components/MainWrapper';
 
 const purpleClasses = {
   50: 'text-purple-50',
@@ -67,7 +70,7 @@ const colorMappings = {
 
 const commonOverrides = {
   blockquote: ({ children }) => (
-    <blockquote className="pl-4 border-l-4 border-gray-400 italic text-gray-500">
+    <blockquote className="border-l-4 border-gray-400 pl-4 italic text-gray-500">
       {children}
     </blockquote>
   ),
@@ -135,7 +138,7 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
       code: {
         component: ({ children }) => (
           <code
-            className={`bg-gray-800 ${titleColorClasses[300]} px-2 py-1 rounded`}
+            className={`bg-gray-800 ${titleColorClasses[300]} rounded px-2 py-1`}
           >
             {children}
           </code>
@@ -144,7 +147,7 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
       blockquote: {
         component: ({ children }) => (
           <blockquote
-            className={`pl-4 border-l-4 ${titleColorClasses['border-400']} italic ${titleColorClasses[100]}`}
+            className={`border-l-4 pl-4 ${titleColorClasses['border-400']} italic ${titleColorClasses[100]}`}
           >
             {children}
           </blockquote>
@@ -158,17 +161,17 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
       <div className="flex flex-col">
         <Link
           href={backLink}
-          className={`${titleColorClasses['after-bg-500']} text-blue-100 relative mr-auto overflow-hidden group hover:after:translate-x-full after:duration-200 after:absolute after:top-0 after:h-full after:w-full after:right-full after:z-[-1]`}
+          className={`${titleColorClasses['after-bg-500']} group relative mr-auto overflow-hidden text-blue-100 after:absolute after:right-full after:top-0 after:z-[-1] after:size-full after:duration-200 hover:after:translate-x-full`}
         >
-          <p className="group-hover:text-[#030615] duration-200">&larr; Back</p>
+          <p className="duration-200 group-hover:text-[#030615]">&larr; Back</p>
         </Link>
         <div className="my-4">
-          <h1 className={`text-2xl font-press-start ${titleColorClasses[100]}`}>
+          <h1 className={`font-press-start text-2xl ${titleColorClasses[100]}`}>
             {data.title}
           </h1>
           <p className={`mt-2 ${titleColorClasses[50]}`}>{data.date}</p>
         </div>
-        <article className="prose lg:prose-l text-blue-100">
+        <article className="lg:prose-l prose text-blue-100">
           <Markdown options={markdownOptions}>{content}</Markdown>
         </article>
         <hr className={`my-8 border-t-2 ${titleColorClasses['border-100']}`} />

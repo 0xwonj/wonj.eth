@@ -1,7 +1,8 @@
-import MainWrapper from '@/components/MainWrapper';
-import getPostMetadata from '@/components/getPostMetadata';
 import Link from 'next/link';
 import React from 'react';
+
+import getPostMetadata from '@/components/getPostMetadata';
+import MainWrapper from '@/components/MainWrapper';
 
 export const metadata = {
   title: 'Wonj ⋅ Academia',
@@ -11,11 +12,11 @@ export const metadata = {
 const PostPreview = props => {
   return (
     <div className="flex flex-col gap-2">
-      <span className="text-xs text-purple-300 font-press-start">
+      <span className="font-press-start text-xs text-purple-300">
         {props.date}
       </span>
       <Link href={`/academia/${props.slug}`}>
-        <h2 className="text-base text-white sm:text-lg md:text-xl hover:text-purple-300 duration-200 font-press-start">
+        <h2 className="font-press-start text-base text-white duration-200 hover:text-purple-300 sm:text-lg md:text-xl">
           {props.title}
         </h2>
       </Link>
@@ -24,17 +25,17 @@ const PostPreview = props => {
         <span className="whitespace-nowrap text-xs capitalize">
           {props.category === 'blockchain' ? (
             <Link href="/academia/blockchain">
-              <span className="text-green-300 font-press-start">
+              <span className="font-press-start text-green-300">
                 {props.category.replaceAll('-', ' ')}
               </span>
             </Link>
           ) : props.category === 'computer-science' ? (
             <Link href="/academia/computer-science">
-              <span className="text-red-300 font-press-start">CS</span>
+              <span className="font-press-start text-red-300">CS</span>
             </Link>
           ) : (
             <Link href="/academia/etc">
-              <span className="text-cyan-300 font-press-start">
+              <span className="font-press-start text-cyan-300">
                 {props.category.replaceAll('-', ' ')}
               </span>
             </Link>
@@ -50,7 +51,7 @@ export default function PostsPage() {
 
   return (
     <MainWrapper>
-      <h3 className="text-purple-400 font-press-start">✦ Academia ✦</h3>
+      <h3 className="font-press-start text-purple-400">✦ Academia ✦</h3>
       {postMetadata
         .sort((a, b) => {
           return new Date(b.date) - new Date(a.date);

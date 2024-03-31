@@ -1,3 +1,5 @@
+import React from 'react';
+
 import SectionComponent from './SectionComponent';
 
 const AboutSections = ({
@@ -12,7 +14,7 @@ const AboutSections = ({
           href={item.links.website}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-blue-400 duration-200"
+          className="flex items-center gap-2 duration-200 hover:text-blue-400"
         >
           <div>
             <i className="fa-solid fa-globe text-xl"></i>
@@ -24,7 +26,7 @@ const AboutSections = ({
           href={item.links.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-blue-400 duration-200"
+          className="flex items-center gap-2 duration-200 hover:text-blue-400"
         >
           <div>
             <i className="fa-brands fa-github text-xl"></i>
@@ -36,7 +38,7 @@ const AboutSections = ({
           href={item.twitter}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-blue-400 duration-200"
+          className="flex items-center gap-2 duration-200 hover:text-blue-400"
         >
           <div>
             <i className="fa-brands fa-twitter text-xl"></i>
@@ -48,7 +50,7 @@ const AboutSections = ({
           href={item.links.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:text-blue-400 duration-200"
+          className="flex items-center gap-2 duration-200 hover:text-blue-400"
         >
           <div>
             <i className="fa-solid fa-link text-xl"></i>
@@ -60,18 +62,18 @@ const AboutSections = ({
 
   return (
     <div>
-      <h2 className="text-2xl text-blue-500 font-press-start mt-6 mb-8">
+      <h2 className="mb-8 mt-6 font-press-start text-2xl text-blue-500">
         ✦ Education ✦
       </h2>
       <SectionComponent items={educationData} renderLink={renderLinks} />
-      <h2 className="text-2xl text-blue-500 font-press-start mt-12 mb-8">
+      <h2 className="mb-8 mt-12 font-press-start text-2xl text-blue-500">
         ✦ Working Experience ✦
       </h2>
       <SectionComponent
         items={workingExperienceData}
         renderLink={renderLinks}
       />
-      <h2 className="text-xl text-blue-500 font-press-start mt-12 mb-8">
+      <h2 className="mb-8 mt-12 font-press-start text-xl text-blue-500">
         ✦ Extracurricular Activities ✦
       </h2>
       <SectionComponent

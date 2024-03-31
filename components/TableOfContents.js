@@ -24,16 +24,16 @@ const TableOfContents = ({ headings }) => {
   }, [headings]);
 
   return (
-    <nav className="fixed top-20 right-5 w-48">
+    <nav className="fixed right-5 top-20 w-48">
       <ul className="flex flex-col">
         {headings.map(heading => (
           <li
             key={heading.id}
-            className={`py-1 ${activeId === heading.id ? 'text-purple-500 font-semibold' : ''}`}
+            className={`py-1 ${activeId === heading.id ? 'font-semibold text-purple-500' : ''}`}
           >
             <a
               href={`#${heading.id}`}
-              className="hover:text-purple-600 transition-colors duration-300"
+              className="transition-colors duration-300 hover:text-purple-600"
             >
               {heading.text}
             </a>
