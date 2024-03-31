@@ -40,10 +40,11 @@ export default function RootLayout({ children }) {
   const footer = (
     <footer className="flex items-center justify-center px-2 py-20">
       <Link href={'/'} className="specialShadow">
-        <i className="fa-regular fa-copyright fa-sm"></i>{' '}
+        <i className="fa-regular fa-copyright fa-sm text-blue-100"></i>{' '}
         <span className="font-press-start text-xs text-blue-100">
-          wonj.eth 2024 👾
+          wonj.eth 2024
         </span>
+        <span className="specialShadowOrange text-sm text-blue-100"> 🔥 </span>
       </Link>
     </footer>
   );
