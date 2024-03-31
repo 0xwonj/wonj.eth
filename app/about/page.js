@@ -144,7 +144,7 @@ export default function AboutPage() {
           </h2>
         </div>
       </div>
-      <div className="flex flex-col gap-8 text-blue-300 sm:flex-row sm:items-stretch">
+      <div className="flex flex-col gap-6 text-blue-300 sm:flex-row">
         <div className="flex items-center justify-center sm:justify-start">
           <Image
             className="rounded-full"
@@ -154,12 +154,12 @@ export default function AboutPage() {
             alt="profile-img"
           />
         </div>
-        <div className="flex flex-col gap-2 text-base sm:text-lg">
+        <div className="flex flex-col gap-4 text-base sm:text-lg">
           <div className="flex flex-1 items-center gap-2 ">
             <div className="grid w-8 place-items-center">
               <i className="fa-solid fa-graduation-cap"></i>
             </div>
-            Blockchain Researcher at SNU VMO Lab
+            Blockchain Researcher at SNU
           </div>
           <div className="flex flex-1 items-center gap-2 ">
             <div className="grid w-8 place-items-center">
@@ -171,11 +171,11 @@ export default function AboutPage() {
             <div className="grid w-8 place-items-center">
               <i className="fa-solid fa-lightbulb"></i>
             </div>
-            Building Something in Stealth Mode..
+            Building in Stealth Mode ..
           </div>
         </div>
       </div>
-      <p className="leading-relaxed text-blue-100">
+      <p className="text-base leading-relaxed text-blue-100">
         Hi, I&apos;m Wonjae Choi, a passionate blockchain developer and
         researcher. I&apos;m currently studying and developing blockchain
         focusing on the scalability and security of blockchain. I&apos;m also
