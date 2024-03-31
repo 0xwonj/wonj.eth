@@ -38,7 +38,7 @@ const ScrollToTopButton = () => {
           fontFamily: "'Press Start 2P', Sans Serif",
           transform: 'rotate(90deg)',
         }}
-        className="specialShadowOrange text-3xl p-3"
+        className="specialShadowOrange p-3 text-3xl"
       >
         {'<'}
       </button>

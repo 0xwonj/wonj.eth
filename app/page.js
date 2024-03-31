@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import MainWrapper from '@/components/MainWrapper';
+import React from 'react';
 
+import MainWrapper from '@/components/MainWrapper';
 import Plaque from '@/components/Plaque';
 
 function LinkSection(props) {
@@ -27,8 +28,8 @@ function LinkSection(props) {
     }[color] || 'hover:text-blue-300';
 
   return (
-    <section className="flex flex-col gap-4 grid grid-cols-1 md:grid-cols-2">
-      <h3 className={`${textColorClass} md:col-span-2 font-press-start`}>
+    <section className="grid grid-cols-1 flex-col gap-4 md:grid-cols-2">
+      <h3 className={`${textColorClass} font-press-start md:col-span-2`}>
         ✦ {title} ✦
       </h3>
       {array &&
@@ -40,10 +41,10 @@ function LinkSection(props) {
               href={link.link}
               target={link.target}
               key={linkIndex}
-              className={`bg-blue-950 text-blue-100 rounded-lg btnBorder relative grid place-items-center p-4 ${hoverTextColorClass}`}
+              className={`btnBorder relative grid place-items-center rounded-lg bg-blue-950 p-4 text-blue-100 ${hoverTextColorClass}`}
             >
               <i
-                className={`absolute text-xl left-4 top-1/2 -translate-y-1/2 ${
+                className={`absolute left-4 top-1/2 -translate-y-1/2 text-xl ${
                   linkIndex < 4 && title === 'Links' ? 'specialShadow' : ''
                 } ${link.icon}`}
               ></i>
@@ -210,19 +211,18 @@ export default function HomePage() {
       <LinkSection title={'Personal'} array={personal} color={'orange'} />
       <Plaque
         benefits={planBenefits}
-        message={''}
         name={'Welcome'}
         price={0}
         link={'/guestbook'}
       />
-      <section className="sm:gap-4 flex items-center justify-between sm:justify-center flex-wrap">
+      <section className="flex flex-wrap items-center justify-between sm:justify-center sm:gap-4">
         {socials.map((link, linkIndex) => {
           return (
             <Link
               href={link.link}
               target={link.target}
               key={linkIndex}
-              className="bg-blue-900 text-blue-100 rounded-lg btnBorder relative grid place-items-center p-3 hover:text-cyan-300"
+              className="btnBorder relative grid place-items-center rounded-lg bg-blue-900 p-3 text-blue-100 hover:text-cyan-300"
             >
               <i className={'text-3xl ' + link.icon}></i>
             </Link>

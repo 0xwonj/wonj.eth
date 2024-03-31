@@ -1,13 +1,15 @@
+import React from 'react';
+
 export default function BlueBtn(props) {
   const { btnText, noShadow, lg } = props;
   return (
-    <div className="p-[1.5px] w-fit my-2 rounded-lg relative group">
-      <div className={'absolute inset-0 blueBorder duration-500 rounded-lg '} />
+    <div className="group relative my-2 w-fit rounded-lg p-[1.5px]">
+      <div className={'blueBorder absolute inset-0 rounded-lg duration-500 '} />
 
       {!noShadow && (
         <div
           className={
-            'absolute -inset-2 blur-xl blueBorder opacity-20 duration-500 rounded-lg '
+            'blueBorder absolute -inset-2 rounded-lg opacity-20 blur-xl duration-500 '
           }
         />
       )}

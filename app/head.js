@@ -11,7 +11,6 @@ export default function Head() {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
-      <link rel="stylesheet" href="/fonts.css"></link>
     </head>
   );
 }

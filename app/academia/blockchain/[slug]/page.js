@@ -1,3 +1,5 @@
+import React from 'react';
+
 import getPostMetadata from '@/components/getPostMetadata';
 import MarkdownPage from '@/components/MarkdownPage';
 
@@ -8,7 +10,7 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({ params }) {
   const id = params?.slug ? ' ⋅ ' + params?.slug : '';
   return {
     title: `Wonj ⋅ Blockchain${id.replaceAll('_', ' ')}`,

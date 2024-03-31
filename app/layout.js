@@ -1,20 +1,18 @@
 import './globals.css';
-import { headers } from 'next/headers';
-import Link from 'next/link';
-
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import { Roboto_Mono } from 'next/font/google';
+import { headers } from 'next/headers';
+import Link from 'next/link';
+import React from 'react';
 import { cookieToInitialState } from 'wagmi';
 
-import { config } from '@/config/wagmi';
-import Web3ModalProvider from '@/components/Web3ModalProvider';
 import ScrollToTopButton from '@/components/ScrollToTop';
 import Web3Button from '@/components/Web3Button';
+import Web3ModalProvider from '@/components/Web3ModalProvider';
+import { config } from '@/config/wagmi';
 
 import Head from './head';
-
-import { Roboto_Mono } from 'next/font/google';
 
 const mono = Roboto_Mono({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -29,9 +27,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const header = (
     <div className="flex flex-col">
-      <header className="flex items-center gap-4 justify-between p-4 relative">
+      <header className="relative flex items-center justify-between gap-4 p-4">
         <Link href={'/'}>
-          <h1 className="specialShadow text-2xl sm:text-3xl font-press-start">
+          <h1 className="specialShadow font-press-start text-2xl sm:text-3xl">
             &#62;&#62; wonj.eth
           </h1>
         </Link>
@@ -40,10 +38,10 @@ export default function RootLayout({ children }) {
   );
 
   const footer = (
-    <footer className="py-20 flex items-center justify-center px-2">
+    <footer className="flex items-center justify-center px-2 py-20">
       <Link href={'/'} className="specialShadow">
         <i className="fa-regular fa-copyright fa-sm"></i>{' '}
-        <span className="font-press-start text-blue-100 text-xs">
+        <span className="font-press-start text-xs text-blue-100">
           wonj.eth 2024 👾
         </span>
       </Link>
