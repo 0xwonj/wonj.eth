@@ -86,7 +86,7 @@ export default function HomePage() {
     {
       name: 'Honors',
       icon: 'fa-solid fa-award',
-      link: '/wip',
+      link: '/honors',
       target: '',
     },
     {

@@ -10,8 +10,7 @@
     0 0 20px #0022ffbf;
 }
 
-.specialShadowOrange {
-  color: #ff8800;
+.orangeShadow {
   text-shadow:
     -1px -1px 4px #ff8800bf,
     2px 2px 10px #ff8800bf,
@@ -22,8 +21,7 @@
 }
 
 @media (hover: hover) {
-  .specialShadowOrange:hover {
-    color: #ffff00;
+  .orangeShadow:hover {
     text-shadow:
       -1px -1px 4px #ffff00bf,
       2px 2px 10px #ffff00bf,

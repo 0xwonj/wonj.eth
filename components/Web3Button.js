@@ -9,7 +9,7 @@ const Web3Button = () => {
     <div className="flex h-10 flex-row justify-end">
       <button
         onClick={() => setShowButtons(!showButtons)}
-        className="specialShadowOrange py-1 font-press-start text-xl sm:px-2 sm:text-2xl"
+        className="orangeShadow py-1 font-press-start text-xl text-orange-500 hover:text-yellow-300 sm:px-2 sm:text-2xl"
       >
         {showButtons ? '>' : '<'}
       </button>
