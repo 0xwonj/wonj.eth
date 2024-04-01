@@ -175,7 +175,7 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <p className="text-base leading-relaxed text-blue-100">
+      <p className="leading-relaxed text-blue-100">
         Hi, I&apos;m Wonjae Choi, a passionate blockchain developer and
         researcher. I&apos;m currently studying and developing blockchain
         focusing on the scalability and security of blockchain. I&apos;m also
