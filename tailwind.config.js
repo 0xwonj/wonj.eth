@@ -21,14 +21,17 @@ export default {
   },
   plugins: [typography],
   safelist: [
+    'bg-[#090d2a]', // blue
+    'bg-[#2a1b10]', // orange
+    'bg-[#1d1329]', // purple
     {
       pattern:
         /text-(purple|pink|blue|orange)-(50|100|200|300|400|500|600|700)/,
       variants: ['hover'],
     },
     {
-      pattern: /bg-(purple|pink|blue|orange)-500/,
-      variants: ['after'],
+      pattern: /bg-(purple|pink|blue|orange)-(500|950)/,
+      variants: ['after', 'hover'],
     },
     {
       pattern: /border-(purple|pink|blue|orange)-(100|400)/,

@@ -23,7 +23,7 @@ const PostPreview = props => {
       </Link>
       <div className="flex items-center justify-between">
         <span className="">&rarr; {props.subtitle}</span>
-        <span className="whitespace-nowrap font-press-start text-xs capitalize text-amber-300">
+        <span className="whitespace-nowrap font-press-start text-xs capitalize text-red-300">
           {props.subcategory.replaceAll('-', ' ')}
         </span>
       </div>
