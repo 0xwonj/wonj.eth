@@ -1,10 +1,10 @@
-node_modules
-.next/cache/webpack
-.git
+assets/
+node_modules/
+.git/
 .gitignore
 .prettierrc
 .prettieriignore
-Dockerfile
-README.md
-LICENSE.md
+.eslintrc.json
 CNAME
+LICENSE
+README.md
