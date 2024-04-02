@@ -15,7 +15,9 @@ const Web3Button = () => {
       </button>
       {showButtons && (
         <div className="flex gap-1">
-          <w3m-network-button />
+          <div className="hidden sm:block">
+            <w3m-network-button />
+          </div>
           <w3m-button label="Connect" />
         </div>
       )}
