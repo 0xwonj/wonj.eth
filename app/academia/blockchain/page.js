@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
+import BackLink from '@/components/BackLink';
 import getPostMetadata from '@/components/getPostMetadata';
 import MainWrapper from '@/components/MainWrapper';
 
@@ -35,6 +36,7 @@ export default function PostsPage() {
 
   return (
     <MainWrapper>
+      <BackLink backLink="/academia" titleColor="purple" />
       <h3 className="font-press-start text-purple-400">✦ Blockchain ✦</h3>
       {postMetadata
         .sort((a, b) => {
