@@ -3,6 +3,7 @@ import React from 'react';
 
 import MagicBookButton from '@/components/MagicBookButton';
 import MainWrapper from '@/components/MainWrapper';
+import sections from '@/data/home/sections.json';
 
 function LinkSection(props) {
   const { title, array, color, children } = props;
@@ -64,138 +65,7 @@ function LinkSection(props) {
 }
 
 export default function HomePage() {
-  let profile = [
-    {
-      name: 'About',
-      icon: 'fa-solid fa-user-circle',
-      link: '/about',
-      target: '',
-    },
-    {
-      name: '\u00A0\u00A0Curriculum Vitae',
-      icon: 'fa-solid fa-file-alt',
-      link: 'CV_Wonjae-Choi.pdf',
-      target: '_blank',
-    },
-    {
-      name: 'Projects',
-      icon: 'fa-solid fa-project-diagram',
-      link: '/wip',
-      target: '',
-    },
-    {
-      name: 'Honors',
-      icon: 'fa-solid fa-award',
-      link: '/wip',
-      target: '',
-    },
-    {
-      name: 'Skills',
-      icon: 'fa-solid fa-tools',
-      link: '/wip',
-      target: '',
-    },
-    {
-      name: 'Interests',
-      icon: 'fa-solid fa-search',
-      link: '/wip',
-      target: '',
-    },
-  ];
-
-  let academia = [
-    {
-      name: 'All',
-      icon: 'fa-solid fa-book-open',
-      link: '/academia',
-      target: '',
-    },
-    {
-      name: 'Blockchain',
-      icon: 'fa-solid fa-cube',
-      link: '/academia/blockchain',
-      target: '',
-    },
-    {
-      name: '\u00A0\u00A0Computer Science',
-      icon: 'fa-solid fa-laptop-code',
-      link: '/academia/computer-science',
-      target: '',
-    },
-    {
-      name: 'Etc',
-      icon: 'fa-solid fa-ellipsis-h',
-      link: '/academia/etc',
-      target: '',
-    },
-  ];
-
-  let personal = [
-    {
-      name: 'Myself',
-      icon: 'fa-solid fa-user',
-      link: '/wip',
-      target: '',
-    },
-    {
-      name: 'WEB3',
-      icon: 'fa-solid fa-globe',
-      link: '/web3',
-      target: '',
-    },
-    { name: 'Blog', icon: 'fa-solid fa-bookmark', link: '/blog', target: '' },
-    {
-      name: 'Hobbies',
-      icon: 'fa-solid fa-gamepad',
-      link: '/wip',
-      target: '',
-    },
-    {
-      name: 'Music',
-      icon: 'fa-solid fa-music',
-      link: 'https://youtube.com/playlist?list=PLAWDa1m7EkNUFIFaeKaXHpdO2zVUH6kg5&si=VF-dSpEbv6ncdPOJ',
-      target: '_blank',
-    },
-    {
-      name: 'Newsletter',
-      icon: 'fa-regular fa-newspaper',
-      link: '/wip',
-      target: '_blank',
-    },
-  ];
-
-  let socials = [
-    {
-      name: 'LinkedIn',
-      icon: 'fa-brands fa-linkedin',
-      link: 'https://linkedin.com/wonj',
-      target: '_blank',
-    },
-    {
-      name: 'Twitter',
-      icon: 'fa-brands fa-twitter',
-      link: 'https://twitter.com/0xwonj',
-      target: '_blank',
-    },
-    {
-      name: 'GitHub',
-      icon: 'fa-brands fa-github',
-      link: 'https://github.com/wonj1012',
-      target: '_blank',
-    },
-    {
-      name: 'Telegram',
-      icon: 'fa-brands fa-telegram',
-      link: 'https://t.me/wonj1012',
-      target: '_blank',
-    },
-    {
-      name: 'Email',
-      icon: 'fa-solid fa-envelope',
-      link: 'mailto:choi@wonj.me',
-      target: '_blank',
-    },
-  ];
+  const { profile, academia, personal, socials } = sections;
 
   return (
     <MainWrapper>
