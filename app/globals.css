@@ -45,6 +45,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.textGradientPink {
+  background: -webkit-linear-gradient(#d400ff, #ff0077);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .bgGradient {
   background: linear-gradient(#0084ff, #00fffb);
 }
