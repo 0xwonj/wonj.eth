@@ -3,9 +3,9 @@ import path from 'path';
 
 import matter from 'gray-matter';
 import Markdown from 'markdown-to-jsx';
-import Link from 'next/link';
 import React from 'react';
 
+import BackLink from '@/components/BackLink';
 import Comments from '@/components/Comments';
 import MainWrapper from '@/components/MainWrapper';
 import { colorMappings } from '@/utils/colors';
@@ -101,12 +101,7 @@ const MarkdownPage = ({ folder, slug, backLink, titleColor }) => {
   return (
     <MainWrapper>
       <div className="flex flex-col">
-        <Link
-          href={backLink}
-          className={`${titleColorClasses['after-bg-500']} group relative mr-auto overflow-hidden text-blue-100 after:absolute after:right-full after:top-0 after:z-[-1] after:size-full after:duration-200 hover:after:translate-x-full`}
-        >
-          <p className="duration-200 group-hover:text-[#030615]">&larr; Back</p>
-        </Link>
+        {backLink && <BackLink backLink={backLink} titleColor={titleColor} />}
         <div className="my-4">
           <h1 className={`font-press-start text-2xl ${titleColorClasses[100]}`}>
             {data.title}
