@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import typography from '@tailwindcss/typography';
+
+export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -17,5 +19,19 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [typography],
+  safelist: [
+    {
+      pattern:
+        /text-(purple|pink|blue|orange)-(50|100|200|300|400|500|600|700)/,
+      variants: ['hover'],
+    },
+    {
+      pattern: /bg-(purple|pink|blue|orange)-500/,
+      variants: ['after'],
+    },
+    {
+      pattern: /border-(purple|pink|blue|orange)-(100|400)/,
+    },
+  ],
 };
