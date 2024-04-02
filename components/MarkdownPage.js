@@ -19,7 +19,7 @@ const commonOverrides = {
 };
 
 const getMarkdownContent = (folder, slug) => {
-  const filePath = path.join(process.cwd(), folder, `${slug}.md`);
+  const filePath = path.join(process.cwd(), 'data', folder, `${slug}.md`);
   const content = fs.readFileSync(filePath, 'utf8');
   return matter(content);
 };
