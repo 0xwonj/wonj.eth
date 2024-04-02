@@ -1,0 +1,23 @@
+[
+  {
+    "institution": "Seoul National University",
+    "location": "Korea",
+    "title": "MS/PH.D IN COMPUTER SCIENCE",
+    "timeframe": "Sep. 2024 - Expected",
+    "details": [
+      "Virtual Machine & Optimization Lab",
+      "Focus on blockchain core research and development.",
+      "Currently participating as an undergraduate research intern."
+    ],
+    "links": {
+      "website": "https://altair.snu.ac.kr/"
+    }
+  },
+  {
+    "institution": "Yonsei University",
+    "location": "Korea",
+    "title": "B.S. CANDIDATE IN COMPUTER SCIENCE",
+    "timeframe": "Mar. 2020 - Aug. 2024",
+    "details": ["Scholarship Granted by WeMade (₩ 5,000,000)"]
+  }
+]

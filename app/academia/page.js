@@ -25,17 +25,19 @@ const PostPreview = props => {
         <span className="whitespace-nowrap text-xs capitalize">
           {props.category === 'blockchain' ? (
             <Link href="/academia/blockchain">
-              <span className="font-press-start text-green-300">
+              <span className="font-press-start text-green-300 hover:text-green-500">
                 {props.category.replaceAll('-', ' ')}
               </span>
             </Link>
           ) : props.category === 'computer-science' ? (
             <Link href="/academia/computer-science">
-              <span className="font-press-start text-red-300">CS</span>
+              <span className="font-press-start text-red-300 hover:text-red-500">
+                CS
+              </span>
             </Link>
           ) : (
             <Link href="/academia/etc">
-              <span className="font-press-start text-cyan-300">
+              <span className="font-press-start text-cyan-300 hover:text-cyan-500">
                 {props.category.replaceAll('-', ' ')}
               </span>
             </Link>
@@ -47,11 +49,30 @@ const PostPreview = props => {
 };
 
 export default function PostsPage() {
-  const postMetadata = getPostMetadata('posts/academia');
+  const postMetadata = getPostMetadata('academia');
 
   return (
     <MainWrapper>
       <h3 className="font-press-start text-purple-400">✦ Academia ✦</h3>
+      <div className="flex justify-center">
+        <Link href="/academia/blockchain">
+          <span className="font-press-start text-green-300 hover:text-green-500">
+            Blockchain
+          </span>
+        </Link>
+        <span className="mx-2">|</span>
+        <Link href="/academia/computer-science">
+          <span className="font-press-start text-red-300 hover:text-red-500">
+            Computer Science
+          </span>
+        </Link>
+        <span className="mx-2">|</span>
+        <Link href="/academia/etc">
+          <span className="font-press-start text-cyan-300 hover:text-cyan-500">
+            Etc
+          </span>
+        </Link>
+      </div>
       {postMetadata
         .sort((a, b) => {
           return new Date(b.date) - new Date(a.date);

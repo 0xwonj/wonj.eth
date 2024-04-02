@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         <span className="font-press-start text-xs text-blue-100">
           wonj.eth 2024
         </span>
-        <span className="specialShadowOrange text-sm text-blue-100"> 🔥 </span>
+        <span className="orangeShadow text-sm"> 🔥 </span>
       </Link>
     </footer>
   );

@@ -24,7 +24,7 @@ To ensure efficient workflow and seamless integration with Vercel for automatic 
 
 - [`develop`](https://github.com/wonj1012/wonj.eth/tree/develop): Our primary development branch. All new features and changes are merged into this branch. Once the development is complete, we create a pull request to merge `develop` into `main`.
 
-- `feature/*`: For new features and significant changes, we create feature branches from `develop`. Once development is completed, the feature branch is merged back into `develop`. (Currently not in use)
+- `feature/*`: For new features and significant changes, we create feature branches from `develop`. Once development is completed, the feature branch is merged back into `develop`. (Not strictly followed)
 
 ## Project Setup
 

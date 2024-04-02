@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 
+import MagicBookButton from '@/components/MagicBookButton';
 import MainWrapper from '@/components/MainWrapper';
-import Plaque from '@/components/Plaque';
 
 function LinkSection(props) {
   const { title, array, color, children } = props;
@@ -197,24 +197,12 @@ export default function HomePage() {
     },
   ];
 
-  let planBenefits = [
-    '🎉 Welcome to my website',
-    '📧 Feel free to contact me',
-    '📝 Leave a comment if any',
-    '👻 Connecting wallet does nothing, just for fun!',
-  ];
-
   return (
     <MainWrapper>
       <LinkSection title={'Profile'} array={profile} color={'blue'} />
       <LinkSection title={'Academia'} array={academia} color={'purple'} />
       <LinkSection title={'Personal'} array={personal} color={'orange'} />
-      <Plaque
-        benefits={planBenefits}
-        name={'Welcome'}
-        price={0}
-        link={'/guestbook'}
-      />
+      <MagicBookButton href={'/guestbook'} title={'Guestbook'} />
       <section className="flex flex-wrap items-center justify-between sm:justify-center sm:gap-4">
         {socials.map((link, linkIndex) => {
           return (

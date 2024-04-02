@@ -4,7 +4,7 @@ import getPostMetadata from '@/components/getPostMetadata';
 import MarkdownPage from '@/components/MarkdownPage';
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetadata('posts/academia');
+  const posts = getPostMetadata('academia');
   return posts.map(post => ({
     slug: post.slug,
   }));
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
 
 const PostPage = props => {
   const slug = props.params.slug;
-  const folder = 'posts/academia';
+  const folder = 'academia';
   const backLink = '/academia/blockchain/';
   const titleColor = 'purple';
 

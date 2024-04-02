@@ -1,0 +1,45 @@
+[
+  {
+    "institution": "Decipher, Seoul National University",
+    "location": "Korea",
+    "title": "BLOCKCHAIN RESEARCHER",
+    "timeframe": "Sep. 2023 - Present",
+    "details": [
+      "A member of Decipher, a blockchain research group at Seoul National University.",
+      "Technical research and sessions about various topics of blockchain.",
+      "Team Opensource Warriors: Contributed to ERC‑6900 github and Alchemy team.",
+      "ZK Research Team: Conducted various research on ZKP and rollup architectures."
+    ],
+    "links": {
+      "website": "https://medium.com/decipher-media",
+      "github": "https://github.com/decipherhub",
+      "twitter": "https://twitter.com/DecipherGlobal"
+    }
+  },
+  {
+    "institution": "Blockchain at Yonsei, Yonsei University",
+    "location": "Korea",
+    "title": "TECH LEAD & BOARD MEMBER",
+    "timeframe": "Sep. 2022 - Aug. 2023",
+    "details": [
+      "Completed two semester activity of Blockchain at Yonsei, a blockchain academic club based on Yonsei University.",
+      "Drove research initiatives on emerging topics in blockchain and web3 technologies.",
+      "Held 2 hours sessions about Solidity smart contracts for 6 weeks as a lecturer."
+    ],
+    "links": {
+      "website": "https://www.blockchainatyonsei.com/",
+      "twitter": "https://twitter.com/BlockchainatYU"
+    }
+  },
+  {
+    "institution": "Morgorithm, Yonsei University",
+    "location": "Korea",
+    "title": "MEMBER",
+    "timeframe": "Mar. 2020 - Mar. 2022",
+    "details": [
+      "Solved and learned algorithm problems in depth and improved coding skills.",
+      "Participated Morgorithm algorithm camp, studied various in‑depth algorithms.",
+      "Participated ICPC Sinchon, which is an algorithm competition"
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
+import BackLink from '@/components/BackLink';
 import getPostMetadata from '@/components/getPostMetadata';
 import MainWrapper from '@/components/MainWrapper';
 
@@ -31,10 +32,11 @@ const PostPreview = props => {
 };
 
 export default function PostsPage() {
-  const postMetadata = getPostMetadata('posts/academia', 'etc');
+  const postMetadata = getPostMetadata('academia', 'etc');
 
   return (
     <MainWrapper>
+      <BackLink backLink="/academia" titleColor="purple" />
       <h3 className="font-press-start text-purple-400">✦ Etc ✦</h3>
       {postMetadata
         .sort((a, b) => {
