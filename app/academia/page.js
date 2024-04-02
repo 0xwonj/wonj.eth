@@ -63,7 +63,7 @@ export default function PostsPage() {
         <span className="mx-2">|</span>
         <Link href="/academia/computer-science">
           <span className="font-press-start text-red-300 hover:text-red-500">
-            Computer Science
+            CS
           </span>
         </Link>
         <span className="mx-2">|</span>
