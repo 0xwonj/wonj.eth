@@ -52,6 +52,21 @@ export default function PostsPage() {
   return (
     <MainWrapper>
       <h3 className="font-press-start text-purple-400">✦ Academia ✦</h3>
+      <div className="flex justify-center">
+        <Link href="/academia/blockchain">
+          <span className="font-press-start text-green-300">Blockchain</span>
+        </Link>
+        <span className="mx-2">|</span>
+        <Link href="/academia/computer-science">
+          <span className="font-press-start text-red-300">
+            Computer Science
+          </span>
+        </Link>
+        <span className="mx-2">|</span>
+        <Link href="/academia/etc">
+          <span className="font-press-start text-cyan-300">Etc</span>
+        </Link>
+      </div>
       {postMetadata
         .sort((a, b) => {
           return new Date(b.date) - new Date(a.date);
