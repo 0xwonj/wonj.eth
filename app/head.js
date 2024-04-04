@@ -11,6 +11,10 @@ export default function Head() {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
+      <meta
+        name="google-site-verification"
+        content="50OAz5UzJPoaYB4mRjcYuuwyDVDIQc1mCbuqZgO2PYQ"
+      />
     </head>
   );
 }

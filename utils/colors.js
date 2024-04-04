@@ -1,3 +1,20 @@
+const blueClasses = {
+  50: 'text-blue-50',
+  100: 'text-blue-100',
+  200: 'text-blue-200',
+  300: 'text-blue-300',
+  400: 'text-blue-400',
+  500: 'text-blue-500',
+  'hover-200': 'hover:text-blue-200',
+  'hover-700': 'hover:text-blue-700',
+  'after-bg-500': 'after:bg-blue-500',
+  'hover-bg-950': 'hover:bg-blue-950',
+  'border-100': 'border-blue-100',
+  'border-400': 'border-blue-400',
+  'button-bg': 'bg-[#111e62]',
+  'hover-button-bg': 'hover:bg-[#080e2e]',
+};
+
 const purpleClasses = {
   50: 'text-purple-50',
   100: 'text-purple-100',
@@ -11,7 +28,25 @@ const purpleClasses = {
   'hover-bg-950': 'hover:bg-purple-950',
   'border-100': 'border-purple-100',
   'border-400': 'border-purple-400',
-  'button-bg': 'bg-[#1d1329]',
+  'button-bg': 'bg-[#32214e]',
+  'hover-button-bg': 'hover:bg-[#181026]',
+};
+
+const orangeClasses = {
+  50: 'text-orange-50',
+  100: 'text-orange-100',
+  200: 'text-orange-200',
+  300: 'text-orange-300',
+  400: 'text-orange-400',
+  500: 'text-orange-500',
+  'hover-200': 'hover:text-orange-200',
+  'hover-700': 'hover:text-orange-700',
+  'after-bg-500': 'after:bg-orange-500',
+  'hover-bg-950': 'hover:bg-orange-950',
+  'border-100': 'border-orange-100',
+  'border-400': 'border-orange-400',
+  'button-bg': 'bg-[#a14200]',
+  'hover-button-bg': 'hover:bg-[#502207]',
 };
 
 const pinkClasses = {
@@ -28,38 +63,7 @@ const pinkClasses = {
   'border-100': 'border-pink-100',
   'border-400': 'border-pink-400',
   'button-bg': 'bg-pink-950',
-};
-
-const blueClasses = {
-  50: 'text-blue-50',
-  100: 'text-blue-100',
-  200: 'text-blue-200',
-  300: 'text-blue-300',
-  400: 'text-blue-400',
-  500: 'text-blue-500',
-  'hover-200': 'hover:text-blue-200',
-  'hover-700': 'hover:text-blue-700',
-  'after-bg-500': 'after:bg-blue-500',
-  'hover-bg-950': 'hover:bg-blue-950',
-  'border-100': 'border-blue-100',
-  'border-400': 'border-blue-400',
-  'button-bg': 'bg-[#090d2a]',
-};
-
-const orangeClasses = {
-  50: 'text-orange-50',
-  100: 'text-orange-100',
-  200: 'text-orange-200',
-  300: 'text-orange-300',
-  400: 'text-orange-400',
-  500: 'text-orange-500',
-  'hover-200': 'hover:text-orange-200',
-  'hover-700': 'hover:text-orange-700',
-  'after-bg-500': 'after:bg-orange-500',
-  'hover-bg-950': 'hover:bg-orange-950',
-  'border-100': 'border-orange-100',
-  'border-400': 'border-orange-400',
-  'button-bg': 'bg-[#2a1b10]',
+  'hover-button-bg': 'hover:bg-[#111111]',
 };
 
 export const colorMappings = {

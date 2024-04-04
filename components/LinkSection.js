@@ -21,7 +21,7 @@ export default function LinkSection(props) {
               href={link.link}
               target={link.target}
               key={linkIndex}
-              className={`${color}BtnBorder relative grid place-items-center rounded-lg ${colorClasses['button-bg']} ${colorClasses['hover-bg-950']} p-4 text-blue-100 ${colorClasses['hover-200']}`}
+              className={`${color}BtnBorder relative grid place-items-center rounded-lg ${colorClasses['button-bg']} ${colorClasses['hover-button-bg']} p-4 text-blue-100 ${colorClasses['hover-200']}`}
             >
               <i
                 className={`absolute left-4 top-1/2 -translate-y-1/2 text-xl ${
