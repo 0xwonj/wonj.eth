@@ -89,10 +89,12 @@ This website is automatically deployed to [Vercel](https://vercel.com/) upon com
 │   └── [pages]   # Pages
 ├── components    # React components
 ├── public        # Static files
-├── posts         # Markdown posts
-│   ├── academia  # Academic posts
-│   └── blog      # Blog posts
+├── data          # Data files
+│   └── [pages]   # Data for pages
+├── config        # Configuration javascript files
+├── utils         # Utility functions
 ├── assets        # Assets not used in the website
+├── .github       # GitHub workflows
 └── [configs]     # Configuration files
 ```
 
