@@ -11,7 +11,7 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
 
-  webpack(config) {
+  webpack: config => {
     config.optimization.minimize = true;
     config.optimization.minimizer.forEach(plugin => {
       if (plugin.constructor.name === 'TerserPlugin') {
@@ -48,6 +48,8 @@ const nextConfig = {
     };
 
     config.optimization.concatenateModules = true;
+
+    config.externals.push('pino-pretty', 'lokijs', 'encoding');
 
     return config;
   },
