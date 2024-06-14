@@ -16,7 +16,7 @@ const Comments = () => {
 
     const config = {
       src: 'https://utteranc.es/client.js',
-      repo: 'wonj1012/comments',
+      repo: '0xwonj/comments',
       'issue-term': 'pathname',
       theme: 'dark-blue',
       crossOrigin: 'anonymous',
