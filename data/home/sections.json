@@ -53,26 +53,14 @@
   ],
   "personal": [
     {
-      "name": "Myself",
-      "icon": "fa-solid fa-user",
+      "name": "Gallery",
+      "icon": "fa-solid fa-images",
       "link": "/wip",
       "target": ""
     },
     {
       "name": "WEB3",
       "icon": "fa-solid fa-globe",
-      "link": "/web3",
-      "target": ""
-    },
-    {
-      "name": "Blog",
-      "icon": "fa-solid fa-bookmark",
-      "link": "/blog",
-      "target": ""
-    },
-    {
-      "name": "Hobbies",
-      "icon": "fa-solid fa-gamepad",
       "link": "/wip",
       "target": ""
     },
@@ -111,13 +99,13 @@
     {
       "name": "Telegram",
       "icon": "fa-brands fa-telegram",
-      "link": "https://t.me/wonj1012",
+      "link": "https://t.me/wonjaechoi",
       "target": "_blank"
     },
     {
       "name": "Email",
       "icon": "fa-solid fa-envelope",
-      "link": "mailto:choi@wonj.me",
+      "link": "mailto:wonjae@snu.ac.kr",
       "target": "_blank"
     }
   ]

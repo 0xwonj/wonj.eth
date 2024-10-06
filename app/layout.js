@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
       <Head />
       <body
         className={
-          'bg-[#030615] text-blue-100 flex flex-col gap-4 sm:gap-6 md:gap-10 min-h-screen p-4 text-sm sm:text-base ' +
+          'bg-[#202024] text-blue-100 flex flex-col gap-4 sm:gap-6 md:gap-10 min-h-screen p-4 text-sm sm:text-base ' +
           mono.className
         }
       >
