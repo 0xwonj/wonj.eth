@@ -1,12 +1,23 @@
 [
   {
-    "institution": "Seoul National University VMO Lab",
+    "institution": "Nethermind",
+    "location": "Remote",
+    "title": "RESEARCH ENGINEER INTERN",
+    "timeframe": "June. 2024 - Sep. 2024",
+    "details": [
+      "Research and development on FRIDA(YoDA) which is new DA Layer using FRI Proof.",
+      "Developed initial build of the client based on Reth.",
+      "Conducted research on zkML."
+    ]
+  },
+  {
+    "institution": "Seoul National University",
     "location": "Korea",
     "title": "UNDERGRADUATE RESEARCH INTERN",
-    "timeframe": "Feb. 2024 - Present",
+    "timeframe": "Feb. 2024 - Aug. 2024",
     "details": [
-      "Working as an intern researching blockchain core.",
-      "Will begin my Integrated Master’s and Ph.D studies in September 2024."
+      "Conducted research on Ethereum core and execution clients.",
+      "Conducted research on ZKP."
     ]
   },
   {
@@ -15,9 +26,10 @@
     "title": "DEVELOPER RELATIONS",
     "timeframe": "June. 2023 - Sep. 2023",
     "details": [
-      "Made technical documentation for Korean XRPL developers.",
-      "Held a one hour developer session about the core of XRPL at the meetup.",
-      "Provided technical support for the XRPL developers."
+      "Developed DEX on XRPL.",
+      "Researched and developed WASM contract on XRPL.",
+      "Made an technical documentation for Korean XRPL developers.",
+      "Held several technical sessions on meetups."
     ],
     "links": {
       "twitter": "https://twitter.com/xrplkorea"
@@ -29,9 +41,9 @@
     "title": "BLOCKCHAIN DEVELOPER",
     "timeframe": "Feb. 2023 - May. 2023",
     "details": [
-      "Made smart contracts using Rust for Solana.",
+      "Developed smart contracts(programs) using Rust for Solana.",
       "Maintained and developed Rust backend server.",
-      "Conducted research on optimizing virtual state channel for crosschain implementation."
+      "Conducted research on the novel cross-chain implementation using virtual state channel."
     ],
     "links": {
       "website": "https://docs.web3mon.io/",

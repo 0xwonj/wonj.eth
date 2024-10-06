@@ -28,7 +28,7 @@ export default function AboutPage() {
             className="rounded-full"
             height={200}
             width={200}
-            src="/images/profile.jpg"
+            src="/images/profile.png"
             alt="profile-img"
           />
         </div>
@@ -37,27 +37,27 @@ export default function AboutPage() {
             <div className="grid w-8 place-items-center">
               <i className="fa-solid fa-graduation-cap"></i>
             </div>
-            Blockchain Researcher at SNU
+            M.S/Ph.D Student at SNU
           </div>
           <div className="flex flex-1 items-center gap-2 ">
             <div className="grid w-8 place-items-center">
               <i className="fa-solid fa-users"></i>
             </div>
-            Member of Decipher
+            Blockchain Developer & Researcher
           </div>
           <div className="flex flex-1 items-center gap-2 ">
             <div className="grid w-8 place-items-center">
               <i className="fa-solid fa-lightbulb"></i>
             </div>
-            Building in Stealth Mode ..
+            Love blockchain and cryptography
           </div>
         </div>
       </div>
       <p className="leading-relaxed text-blue-100">
         Hi, I&apos;m Wonjae Choi, a passionate blockchain developer and
-        researcher. I&apos;m currently studying and developing blockchain
-        focusing on the scalability and security of blockchain. I&apos;m also
-        building something in stealth mode.
+        researcher. I&apos;m currently pursuing my M.S/Ph.D degree at Seoul
+        National University. I love the trustless and decentralized nature of
+        blockchain and cryptography.
       </p>
       <hr className="border-t-2 border-blue-200" />
       <AboutSections
